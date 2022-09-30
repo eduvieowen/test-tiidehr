@@ -59,8 +59,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  overflow-x: hidden;
-  width: 100vw;
+  overflow-x: hidden !important;
 }
 .container {
   width: 90%;
