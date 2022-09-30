@@ -55,11 +55,11 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
+  overflow-x: hidden !important;
 }
 
 body {
   font-family: var(--body-font);
-  overflow-x: hidden !important;
 }
 .container {
   width: 90%;
