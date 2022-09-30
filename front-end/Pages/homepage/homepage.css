@@ -60,6 +60,7 @@ html {
 body {
   font-family: var(--body-font);
   overflow-x: hidden;
+  width: 100vw;
 }
 .container {
   width: 90%;
