@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="dashboard.css" /> -->
+  <!-- <link rel="stylesheet" href="general.css"> -->
+  <!-- <link rel="stylesheet" href="test.css"> -->
+  <link rel="stylesheet" href="employerDashboard.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="../../css/generalStyling.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="../../css/tableStyling.css">
+  <!-- <link rel="stylesheet" href="../../css/formStyling.css"> -->
+  <!-- <link rel="stylesheet" href="../../css/popUpStyling.css"> -->
+
+  <title>TIIDE-HR | Leave History</title>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <section id="topBar">
+    <!-- logo -->
+    <img src="./icons/logo.png" alt="" />
+
+    <!-- Search -->
+    <div class="searchbar">
+      <input type="search" name="" id="" class="input-width-max" />
+      <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+      <div class="search-icon-div">
+        <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+      </div>
+        
+    </div>
+
+    <!-- time and date -->
+    <div id="topBar-texts">
+      <div id="topBar-time-and-date">
+
+        <div class="ttTime">
+          <!-- <p>Time</p> -->
+          <p id="topBar-time" class="small-text-bold">
+            <span class="hour"> 11</span>:
+            <span class="minutes">27</span>
+          <span class="am-pm">am</span>
+        </p>
+      </div>
+
+      <div class="ttDate">              
+        <!-- <p>Date</p> -->
+        <p id="topBar-date" class="small-text-bold">
+          <span class="Month">Aug </span>
+          <span class="day">06</span>,
+          <span class="year">2022</span>
+        </p>
+      </div>
+
+      </div>
+
+      <!-- topbar profile -->
+
+      <div class="" id="topbar-profile">
+    <i class="fa-solid fa-user userph"></i>
+          <div id="topbar-profile-text">
+          <h4 class="small-text-bold" id="userFullName">
+            Olaseni Sanyaolu
+          </h4>
+          <h4 class="small-text-italic" id="dept">BackEnd</h4>
+        </div>
+      </div>
+    </div>
+
+    <i class="fa-solid fa-bars" id="fa-bars"></i>
+  </section>
+
+  <!-- main section -->
+  <main>
+    <!-- side bar -->
+    <section id="sidebar" class="sidebar">
+      <!-- top side bar -->
+      <div id="sidebar-nav">
+        <!-- Dashboard with active class -->
+        <div id="arrow-box" onclick="toggleArrow()"> <!-- -->
+          <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+        </div>
+        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+        <!-- Dashboard -->
+        <label class="page-link active" for="Dashboard">
+          <i class="fa-solid icon-14 fa-table-columns"></i>
+          <a href="../employerDashboard/employerDashboard.html"class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+        </label>
+
+        <!-- roles -->
+        
+        <label class="page-link" for="role-link">
+          <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+          <a href="../Role management/RoleMgtDashboard/RoleMgtDashB.html"class="link"  name="role-link" id="role-link">Role</a>
+        </label>
+        
+        <!-- levels -->
+       
+        <label class="page-link" for="levels-link">
+          <i class="fa-solid icon-14 fa-layer-group"></i>
+          <a href="../Level_Management/level_management.html"class="link"  name="levels-link" id="levels-link">Levels</a>
+        </label>
+
+        <!-- Leaves -->
+        
+        <label class="page-link" for="leave-link">
+          <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+           <a href="../LeaveManagement/leaveManagement.html"class="link"  name="leave-link" id="leave-link">Leave</a>
+        </label>
+
+
+        <!-- Employee -->
+        
+        <label class="page-link" for="employee-link">
+          <i class="fa-solid icon-14 fa-people-roof"></i>
+           <a href="../EmployeeManagement/employeeMgt.html"class="link"  name="employee-link" id="employee-link">Employees</a>
+        </label>
+
+        <!-- notification -->
+        
+        <label class="page-link inactive" for="notification-link"> 
+          <i class="fa-solid icon-14 fa-bell"></i>
+           <a href=""class="link"  name="notification-link" id="notification-link">Notification</a>
+        </label>
+
+
+        <!-- Business Profile -->
+        
+        <label class="page-link" for="business-profile-link"> 
+          <i class="fa-solid icon-14 fa-building"></i>
+           <a href="../businessProfileDash/businessProfileDash.html"class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+        </label>
+
+        <!-- Contact us -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-address-card"></i>
+          <a href="../../Pages/homepage/contact.html"class="link"  name="sign-out" id="sign-out">Contact us</a>
+        </label>
+        
+        <!-- Sign out -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+          <a href="../../../index.html"class="link"  name="sign-out" id="sign-out">Sign Out</a>
+        </label>
+      </div>
+    </section>
+    <!-- content section -->
+    <section id="content-area">
+
+
+      <div class="container-boxi">
+        <section class="content-boxes">
+          <h3>Number of Employees</h3>
+          <div id="leaveWrapper">
+            <div id="" class="leave-counter sec-blue-bg">
+              <div class="leave-count large-text-bold" id="employee-count">3</div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="content-boxes">
+          <h3>Number of Departments</h3>
+          <div id="leaveWrapper">
+            <div id="" class="leave-counter sec-blue-bg">
+              <div class="leave-count large-text-bold" id="department-count">0</div>
+            </div>
+          </div>
+        </section>
+        <section class="content-boxes">
+          <h3>Number of Roles</h3>
+          <div id="leaveWrapper">
+            <div id="" class="leave-counter sec-blue-bg">
+              <div class="leave-count large-text-bold" id="role-count"></div>
+            </div>
+          </div>
+        </section>
+        <section class="content-boxes">
+          <h3>Number of Levels</h3>
+          <div id="leaveWrapper">
+            <div id="" class="leave-counter sec-blue-bg">
+              <div class="leave-count large-text-bold" id="level-count"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- recent leaves -->
+
+        <div id="mainContentWrapper" class="section-container column-span-full" style="margin-top: -30px;">
+  
+          <div class="leave-text">
+            <h4 class="large-text-bold">Recent Leaves applied</h4>
+          </div>
+  
+          <table class="section-table">
+            <tr>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Description</th>
+            </tr>
+  
+            <tbody class="table-body">
+              <!-- <tr>
+                <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Maternity</td>
+                <td>4 months</td>
+                <td>Nursing Mothers<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+              </tr>
+    
+              <tr>
+                <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Casual</td>
+                <td>2 week</td>
+                <td>For resting<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>           
+              </tr>
+    
+              <tr>
+                <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Annual</td>
+                <td>4 weeks</td>
+                <td>For resting<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+              </tr>
+  
+              <tr>
+                <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Sick</td>
+                <td>2 weeks</td>
+                <td>For recovery<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+              </tr> -->
+            </tbody>
+  
+          </table>
+          <div class="register">
+            <a href="../LeaveManagement/leaveManagement.html">
+              <button id="save" type="submit" value="Save"><h3>more</h3></button>
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <script src="../../javascript/dashboard.js"></script>
+    <script src="./employeeDashboard.js"></script>
+    <script src="https://kit.fontawesome.com/c371471545.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

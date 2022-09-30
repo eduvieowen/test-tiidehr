@@ -1,0 +1,120 @@
+/* html body styling */
+body{
+    font-size: 1rem;
+}
+/* popup container styling */
+#popup-container{
+    width: 40%;
+    height: 20% !important;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+    border: 1px solid #efefef;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 10px #00000026;
+    color: #000080;
+}
+@media screen and (max-width: 1000px){
+    #popup-container{
+        width: 80%;
+    }
+   
+}
+
+/* popup svg image */
+.popup-header svg{
+    color: red;
+}
+
+/* popup header */
+.popup-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* description input field */
+.description-box{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00000026;
+    border-color: #efefef;
+}
+/* granted access form */
+.granted-access{
+    margin-top: 1rem;
+}
+/* granted access form elements */
+.form-elements{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 6rem;
+}
+@media screen and (max-width: 1450px){
+    .form-elements{
+        flex-direction: column;
+        margin: 1rem 1rem;
+    }
+}
+/* granted access form container */
+.box{
+    border: 1px solid #efefef;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00000026
+}
+/* granted access form dropdown menu */
+select{
+    padding: 0.3rem 3rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+}
+/* pop up container buttons styling */
+.back-links{
+    display: flex;
+    justify-content: space-between;
+}
+/* individual pop up container buttons styling */
+.back-links a {
+    text-decoration: none !important;
+    filter: 0.6;
+    color: white;
+    padding: 5px 28px;
+    font-size: 22px;
+    border-radius: 20px;
+    margin: 30px;
+    border-color: #007EA7;
+    border: 1px solid black;
+    background-color: white;
+  }
+  /* pop up container buttons hover effect */
+.back-links a:hover{
+    background-color: grey;
+    color: grey;
+}
+/* pop up container save button styling */
+.back-links a.blue {
+    background-color: #000080;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+/* pop up container cancel buttons styling */
+.back-links a.cancel{
+    color: #000080;
+    border-color: #000080;
+    background-color: #edfaff;
+    text-shadow: 0px 3px #00000026;
+    font-weight: bold;    
+}
+
+/* make button responsive on small screen */
+@media screen and (max-width: 750px){
+    .back-links a{
+        margin: 10px;
+    }
+}    
+@media screen and (max-width: 620px){
+    .back-links {
+        flex-direction: column;
+        text-align: center;
+    }
+} 

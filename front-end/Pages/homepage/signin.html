@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignIn</title>
+    <link rel="stylesheet" href="../homepage/signin.css" />
+
+    <!-- Animate on Scroll Library-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Fontawesome link -->
+    <script src="https://kit.fontawesome.com/511199eef8.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="body">
+    <!-- ==================== HEADER  ==================== -->
+    <header class="header">
+      <div class="container">
+        <nav>
+          <div class="logo-wrapper">
+            <a class="logo" href="../../../index.html">
+              <img
+                src="/front-end/assets/images/logo.png"
+                alt="TIIDE HR logo"
+                class="logo-image"
+              />
+            </a>
+            <button class="mobile-nav-toggle"
+              aria-controls="navigation"
+              aria-expanded="false" >
+              <span class="sr-only"></span>
+            </button>
+          </div>
+          <div class="nav-aside">
+            <ul id="navigation navigation-desktop" class="navigation navigation-desktop">
+              <div class="nav-center">
+                <li><a href="../../../index.html">Home</a></li>
+                <!-- <li><a href="#">Platform</a></li> -->
+                <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+              </div>
+              <div class="nav-right">
+                <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                  Sign In</a
+                >
+                <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                  Sign Up</a
+                >
+              </div>
+            </ul>
+
+            <ul data-visible="false" id="navigation navigation-mobile" class="navigation navigation-mobile">
+              <li><a href="../../../index.html">Home</a></li>
+              <!-- <li><a href="#">Platform</a></li> -->
+              <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+              <li class="sign-in-link">
+                <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                  Sign In</a >
+              </li>
+              <li class="sign-up-link">
+                <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                  Sign Up</a>
+              </li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ==================== SIGNIN FORM ==================== -->
+
+    <!-- <span class="big-circle"></span> -->
+    <main>
+      
+      <div class="container">
+        <div class="form-wrapper__signin form-wrapper">
+          <div class="form-left">
+            <img
+              src="/front-end/Assets/images/form-image.jpg"
+              alt=""
+              class="sign-up-img"
+            />
+          </div>
+
+          <div class="signin-form-container">
+            <form action="" class="signin-form" id="signinForm">
+              <div class="form-heading">
+                Welcome Back <br />
+                <span>Please enter your details</span>
+              </div>
+              <div class="form-group">
+                <label name="email" for="email">Email</label>
+                <input name="email" type="email" id="email" />
+              </div>
+              <div class="form-group password-form-group">
+                <label name="password" for="password">Password</label>
+                <input name="password" type="password" id="password" />
+                <button class="toggle-password">
+                  <span  class="reveal-icon ">
+                    <i class="fa fa-solid fa-eye"></i>
+                  </span>
+                  <span  class="hide-icon">
+                    <i class="fa-solid fa-eye-slash"></i>
+                  </span>
+                </button>
+              </div>
+              <small></small>
+              <div class="form-group">
+                <button type="submit" class="submit-btn sign-in-button">
+                  Sign in
+                </button>
+              </div>
+              <div class="button__divider-line"></div>
+              <div class="btn__divider-text"><span>OR</span></div>
+              <div class="form-group">
+                <button type="submit" class="submit-btn google__sign-in-btn">
+                  <span
+                    ><img
+                      class="google-svg"
+                      src="/front-end/Assets/icons/google.svg"
+                      alt=""
+                  /></span>
+                  Sign in with Google
+                </button>
+              </div>
+              <div class="signup__redirect">
+                <p>
+                  Don't have an account? <a href="./signup.html">Sign Up</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+   <!-- ==================== FOOTER ==================== -->
+      <!-- data-aos="zoom-in-up" data-aos-duration="4000" -->
+      <footer class="footer-area" >
+        <div class="container">
+          <div class="footer">
+            <div class="footer-top">
+              <div class="footer-logo">
+                <a class="logo" href="../../../index.html">
+                  <img
+                    src="/front-end/assets/images/footer_logo.jpeg"
+                    alt="TIIDE HR logo"
+                    class="logo-image footer-logo-image"
+                  />
+                </a>
+              </div>
+  
+              <div class="footer-links-wrapper">
+                <a class="footer-link" href="/front-end/Pages/homepage/about.html">About</a>
+                <a class="footer-link" href="/front-end/Pages/homepage/privacy.html">Privacy Policy</a>
+                <a class="footer-link" href="/front-end/Pages/homepage/contact.html">Contact</a>
+              </div>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-bottom">
+              <p>Copyright &copy; 2022 TIIDE HR. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!--========= ANIMATE ON SCROLL JS CDN LINK =========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--=========INITTIALIZE ANIMATE ON SCROLL =========-->
+    <script>
+      AOS.init();
+    </script>
+
+<script type="module" src="./javascript/signin.js"></script>
+  </body>
+</html>

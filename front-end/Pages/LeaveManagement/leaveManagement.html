@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../../css/generalTemplate.css"> -->
+  <link rel="stylesheet" href="../../css/generalStyling.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="../../css/tableStyling.css">
+  <link rel="stylesheet" href="../../css/formStyling.css">
+  <link rel="stylesheet" href="../../css/popUpStyling.css">
+
+  <title>TIIDE-HR | Leave Management</title>
+  <script src="https://kit.fontawesome.com/c371471545.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- nav bar -->
+     <!-- nav bar -->
+     <section id="topBar">
+      <!-- logo -->
+      <img src="./icons/logo.png" alt="" />
+
+      <!-- Search -->
+      <div class="searchbar">
+        <input type="search" name="" id="" class="input-width-max" />
+        <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+        <div class="search-icon-div">
+          <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+        </div>
+          
+      </div>
+
+      <!-- time and date -->
+      <div id="topBar-texts">
+        <div id="topBar-time-and-date">
+
+          <div class="ttTime">
+            <!-- <p>Time</p> -->
+            <p id="topBar-time" class="small-text-bold">
+              <span class="hour"> 11</span>:
+              <span class="minutes">27</span>
+            <span class="am-pm">am</span>
+          </p>
+        </div>
+
+        <div class="ttDate">              
+          <!-- <p>Date</p> -->
+          <p id="topBar-date" class="small-text-bold">
+            <span class="Month">Aug </span>
+            <span class="day">06</span>,
+            <span class="year">2022</span>
+          </p>
+        </div>
+
+        </div>
+
+        <!-- topbar profile -->
+
+        <div class="" id="topbar-profile">
+      <i class="fa-solid fa-user userph"></i>
+            <div id="topbar-profile-text">
+            <h4 class="small-text-bold" id="userFullName">
+              Olaseni Sanyaolu
+            </h4>
+            <h4 class="small-text-italic" id="dept">BackEnd</h4>
+          </div>
+        </div>
+      </div>
+
+      <i class="fa-solid fa-bars" id="fa-bars"></i>
+    </section>
+  
+    <!-- main section -->
+    <main id="main">
+      <!-- side bar -->
+      <section id="sidebar" class="sidebar">
+        <!-- top side bar -->
+        <div id="sidebar-nav">
+          <!-- Dashboard with active class -->
+          <div id="arrow-box" onclick="toggleArrow()" > <!-- -->
+            <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+          </div>
+          <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+  
+          <!-- Dashboard -->
+          <label class="page-link" for="Dashboard">
+            <i class="fa-solid icon-14 fa-table-columns"></i>
+            <a href="../employerDashboard/employerDashboard.html"class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+          </label>
+  
+          <!-- roles -->
+          
+          <label class="page-link" for="role-link">
+            <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+            <a href="../Role management/RoleMgtDashboard/RoleMgtDashB.html"class="link"  name="role-link" id="role-link">Role</a>
+          </label>
+          
+          <!-- levels -->
+         
+          <label class="page-link" for="levels-link">
+            <i class="fa-solid icon-14 fa-layer-group"></i>
+            <a href="../Level_Management/level_management.html"class="link"  name="levels-link" id="levels-link">Levels</a>
+          </label>
+  
+          <!-- Leaves -->
+          
+          <label class="page-link active" for="leave-link">
+            <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+             <a href="leaveManagement.html"class="link"  name="leave-link" id="leave-link">Leave</a>
+          </label>
+  
+  
+          <!-- Employee -->
+          
+          <label class="page-link" for="employee-link">
+            <i class="fa-solid icon-14 fa-people-roof"></i>
+             <a href="../EmployeeManagement/employeeMgt.html"class="link"  name="employee-link" id="employee-link">Employees</a>
+          </label>
+  
+          <!-- notification -->
+          
+          <label class="page-link inactive" for="notification-link"> 
+            <i class="fa-solid icon-14 fa-bell"></i>
+             <a href="../EmployeeManagement/EmployeeDashboard/Dashboard-Tiana/dashboard-tiana.html"class="link"  name="notification-link" id="notification-link">Notification</a>
+          </label>
+  
+  
+          <!-- Business Profile -->
+          
+          <label class="page-link" for="business-profile-link"> 
+            <i class="fa-solid icon-14 fa-building"></i>
+             <a href="../businessProfileDash/businessProfileDash.html"class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+          </label>
+
+          <!-- Contact us -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-address-card"></i>
+          <a href="../../Pages/homepage/contact.html"class="link"  name="sign-out" id="sign-out">Contact us</a>
+        </label>
+  
+          <!-- Sign out -->
+          <label class="page-link" for="sign-out">
+            <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+            <a href=""class="link"  name="sign-out" id="sign-out">Sign Out</a>
+          </label>
+        </div>
+      </section>
+
+    <!-- CONTENT SECTION -->
+    <section id="content-area">
+
+      <div id="mainContentWrapper" class="section-container column-span-full">
+
+        <div class="leave-text">
+          <h4 class="Xlarge-text-bold">Leave Management</h4>
+          <i id="altPopup" class="fa-solid fa-circle-plus" onclick="openPopup()"></i>
+        </div>
+
+        <table class="section-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Duration (days)</th>
+              <th>Description</th>
+              <th class="centered-td">Action</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body">
+            <!-- <tr>
+              <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Maternity</td>
+              <td>4 months</td>
+              <td>Nursing Mothers<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+            
+              <td class="centered-td">
+  
+                <svg class="edit-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="green" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+  
+                <svg class="delete-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="red" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+  
+              </td>
+            </tr>
+  
+            <tr>
+              <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Casual</td>
+              <td>2 week</td>
+              <td>For resting<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+  
+             
+              <td class="centered-td">
+  
+                <svg class="edit-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="green" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+  
+                <svg class="delete-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="red" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </td>
+            </tr>
+  
+            <tr>
+              <td><span class="table-icon"><img src="../../../Assets/icons/edit_square.svg"></span>Annual</td>
+              <td>4 weeks</td>
+              <td>For resting<span class="table-icon"><img src="../../../Assets/icons/delete.svg"></span></td>
+  
+              
+              <td class="centered-td">
+  
+                <svg class="edit-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="green" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+  
+                <svg class="delete-data" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="red" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                </svg>
+              </td>
+            </tr> -->
+          </tbody>
+
+        </table>
+
+        <!-- Create Leave Button -->
+        <div id="btnContainer" class="create-btn">
+          <button class="primary-btn" type="button" onclick="openPopup()">
+            <h3>Create Leave Policy</h3>
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+    
+    <!-- POPUP SECTIONS -->
+    <aside id="popupContainer">
+
+      <div class="popup-content">
+
+        <h4 id="popupTitle">Create Leave Policy</h4>
+
+        <form id="createLeaveForm" action="">
+          <fieldset>
+
+            <section class="popupForm">
+
+              <div class="">
+                <label for="leaveSelect">
+                  <h5>Type</h5>
+                </label>
+
+                <input type="text" class="leaveType" name="leaveSelect" placeholder="Select Leave Type" required>
+
+                
+              </div>
+
+              <div>
+                <label for="durationSelect">
+                  <h5>Duration (Days)</h5>
+                </label>
+
+                <!-- <input class="duration-input" type="text"> -->
+                <input name="days"  class="duration" type="number" min="0" max="365" required>
+              </div>
+
+
+              <div id="textarea" class="column-span-full">
+                <label for="leaveText">
+                  <h5>Description</h5>
+                </label>
+
+                <textarea name="leaveText" class="description" placeholder="Type Leave Description..." required></textarea>
+              </div>
+              
+            </section>
+
+            <section id="submitButtons">
+
+              <button class="secondary-btn" type="button" onclick="closePopup()">
+                <h3>Cancel</h3>
+              </button>
+
+              <button class="primary-btn saveButton" type="submit">
+                <h3>Save</h3>
+              </button>
+
+            </section>
+
+          </fieldset>
+        </form>
+
+      </div>
+
+    </aside>
+
+    <aside id="popupContainerTwo">
+
+      <div class="popup-content">
+
+        <h4>Edit Leave Policy</h4>
+
+        <form action="">
+          <fieldset>
+
+            <section class="popupForm">
+
+              <div class="">
+                <label for="leaveSelect">
+                  <h5>Type</h5>
+                </label>
+
+                <input type="text" name="leaveSelect" placeholder="Select Leave Type">
+
+               
+              </div>
+
+              <div>
+                <label for="durationSelect">
+                  <h5>Duration (Days)</h5>
+                </label>
+
+                <!-- <input class="duration-input" type="text"> -->
+                <input name="days" type="number" min="0" max="365" >
+              </div>
+
+
+              <div id="textarea" class="column-span-full">
+                <label for="leaveText">
+                  <h5>Description</h5>
+                </label>
+
+                <textarea name="leaveText" class="" placeholder="Type Leave Description..."></textarea>
+              </div>
+              
+            </section>
+
+            <section id="submitButtons">
+
+              <button class="secondary-btn" type="button" onclick="closePopupTwo()">
+                <h3>Cancel</h3>
+              </button>
+
+              <button class="primary-btn" type="button" onclick="saveData()">
+                <h3>Save</h3>
+              </button>
+
+            </section>
+
+          </fieldset>
+        </form>
+
+      </div>
+
+    </aside>
+    <script src="crud.js"></script>
+    <script src="../../javascript/popup.js"></script>
+    <script src="../../javascript/dashboard.js"></script>
+    
+</body>
+
+</html>

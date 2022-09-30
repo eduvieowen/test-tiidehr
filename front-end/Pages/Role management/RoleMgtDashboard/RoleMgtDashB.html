@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../../../css/tableStyling.css">
+
+  <link rel="stylesheet" href="../../../css/dashboard.css">
+
+  <link rel="stylesheet" href="../../../css/formStyling.css">
+  <link rel="stylesheet" href="../../../css/popUpStyling.css">
+  <link rel="stylesheet" href="../../../css/generalStyling.css">
+
+  <title>TIIDE-HR | Role Management</title>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <section id="topBar">
+    <!-- logo -->
+    <img src="./icons/logo.png" alt="" />
+
+    <!-- Search -->
+    <div class="searchbar">
+      <input type="search" name="" id="" class="input-width-max" />
+      <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+      <div class="search-icon-div">
+        <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+      </div>
+        
+    </div>
+
+    <!-- time and date -->
+    <div id="topBar-texts">
+      <div id="topBar-time-and-date">
+
+        <div class="ttTime">
+          <!-- <p>Time</p> -->
+          <p id="topBar-time" class="small-text-bold">
+            <span class="hour"> 11</span>:
+            <span class="minutes">27</span>
+          <span class="am-pm">am</span>
+        </p>
+      </div>
+
+      <div class="ttDate">              
+        <!-- <p>Date</p> -->
+        <p id="topBar-date" class="small-text-bold">
+          <span class="Month">Aug </span>
+          <span class="day">06</span>,
+          <span class="year">2022</span>
+        </p>
+      </div>
+
+      </div>
+
+      <!-- topbar profile -->
+
+      <div class="" id="topbar-profile">
+    <i class="fa-solid fa-user userph"></i>
+          <div id="topbar-profile-text">
+          <h4 class="small-text-bold" id="userFullName">
+            Olaseni Sanyaolu
+          </h4>
+          <h4 class="small-text-italic" id="dept">BackEnd</h4>
+        </div>
+      </div>
+    </div>
+
+    <i class="fa-solid fa-bars" id="fa-bars"></i>
+  </section>
+
+  <!-- main section -->
+  <main id="main">
+    <!-- side bar -->
+    <section id="sidebar" class="sidebar">
+      <!-- top side bar -->
+      <div id="sidebar-nav">
+        <!-- Dashboard with active class -->
+        <div id="arrow-box" onclick="toggleArrow()">
+          <!-- -->
+          <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+        </div>
+        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+        <!-- Dashboard -->
+        <label class="page-link" for="Dashboard">
+          <i class="fa-solid icon-14 fa-table-columns"></i>
+          <a href="../../employerDashboard/employerDashboard.html" class="link"
+            name="Dashboard" id="Dashboard">Dashboard</a>
+        </label>
+
+        <!-- roles -->
+
+        <label class="page-link active" for="role-link">
+          <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+          <a href="RoleMgtDashB.html" class="link" name="role-link"
+            id="role-link">Role</a>
+        </label>
+
+        <!-- levels -->
+
+        <label class="page-link" for="levels-link">
+          <i class="fa-solid icon-14 fa-layer-group"></i>
+          <a href="../../Level_Management/level_management.html" class="link" name="levels-link"
+            id="levels-link">Levels</a>
+        </label>
+
+        <!-- Leaves -->
+
+        <label class="page-link" for="leave-link">
+          <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+          <a href="../../LeaveManagement/leaveManagement.html" class="link" name="leave-link" id="leave-link">Leave</a>
+        </label>
+
+
+        <!-- Employee -->
+
+        <label class="page-link" for="employee-link">
+          <i class="fa-solid icon-14 fa-people-roof"></i>
+          <a href="../../EmployeeManagement/employeeMgt.html" class="link" name="employee-link" id="employee-link">Employees</a>
+        </label>
+
+        <!-- notification -->
+
+        <label class="page-link inactive" for="notification-link">
+          <i class="fa-solid icon-14 fa-bell"></i>
+          <a href="" class="link" name="notification-link" id="notification-link">Notification</a>
+        </label>
+
+
+        <!-- Business Profile -->
+
+        <label class="page-link" for="business-profile-link">
+          <i class="fa-solid icon-14 fa-building"></i>
+          <a href="../../businessProfileDash/businessProfileDash.html" class="link" name="business-profile-link"
+            id="business-profile-link">Business Profile</a>
+        </label>
+
+
+        <!-- Contact us -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-address-card"></i>
+          <a href="../../../Pages/homepage/contact.html"class="link"  name="sign-out" id="sign-out">Contact us</a>
+        </label>
+
+        <!-- Sign out -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+          <a href="../../../../index.html" class="link" name="sign-out" id="sign-out">Sign Out</a>
+        </label>
+      </div>
+    </section>
+    <!-- content section -->
+    <section id="content-area">
+
+      <!-- ed was here -->
+      <article id="mainContentWrapper">
+
+        <div class="leave-text">
+          <h4 class="Xlarge-text-bold">Role Management</h4>
+          <i id="altPopup" class="fa-solid fa-circle-plus" onclick="openPopup()"></i>
+        </div>
+
+        <table class="container">
+          <!-- table headers -->
+          <thead>
+            <tr>
+              <th class="centered-td">Roles</th>
+              <th class="centered-td">Description</th>
+              <th class="centered-td">Granted Access</th>
+              <th class="centered-td">Users</th>
+              <th class="centered-td">Action</th>
+            </tr>
+          </thead>
+          <tbody class="bodyTable">
+
+          </tbody>
+
+          
+
+        </table>
+
+        <!-- button -->
+        <div id="btnContainer">
+
+          <button class="normal-text-bold primary-btn" onclick="openPopup()">
+            <h3>Create New Role</h3>
+          </button>
+
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- This is pop-up section -->
+
+  <!-- Ed's Create Role Popup -->
+  <!-- NOTE: rename container id using naming convention "popupContainer, popupContainerTwo, popupContainerThree etc."-->
+  <aside id="popupContainer">
+
+    <div class="popup-content">
+
+      <form action="">
+
+        <h4>Create Role</h4>
+
+        <fieldset>
+
+          <section class="popupForm">
+
+            <div class="column-span-full">
+              <label for="roleTitle">
+                <h5>Role</h5>
+              </label>
+
+              <input type="text" name="roleTitle" id="role" required>
+            </div>
+
+            <div class="column-span-full">
+              <label for="roleText">
+                <h5>Description</h5>
+              </label>
+
+              <textarea name="roleText" placeholder="Type role description..." id="textar" required></textarea>
+            </div>
+
+          </section>
+
+          <section id="submitButtons">
+            <!-- removed button links and added onclick functions -->
+            <button class="secondary-btn cancelButton" type="button" value="Cancel" onclick="closePopup()">
+              <h3>Cancel</h3>
+            </button>
+
+            <button class="primary-btn" type="button" onclick="closeAndOpen()" value="Save">
+              <h3>Next</h3>
+            </button>
+          </section>
+
+        </fieldset>
+      </form>
+
+    </div>
+
+  </aside>
+
+  <aside id="popupContainerTwo">
+
+    <div class="popup-content">
+
+      <!-- <h3>Edit Role</h3> -->
+
+      <h4>Granted Access:</h4>
+
+      <form id="roleAccessForm" action="">
+        <fieldset>
+
+          <section class="popupForm">
+
+            <div class="column-span-full role-styling">
+
+              <label for="roleMgt">
+                Role Management
+              </label>
+
+              <select name="roleMgt" id="roles" class="new">
+                <option value="none" selected>Denied</option>
+                <option value="Role Management">Granted</option>
+              </select>
+            </div>
+
+            <div class="column-span-full role-styling">
+              <label for="leaveMgt">
+                Leave Management
+              </label>
+
+              <select name="leaveMgt" id="leaves" class="new">
+                <option value="none" selected>Denied</option>
+                <option value="Leave Management">Granted</option>
+              </select>
+            </div>
+
+            <div class="column-span-full role-styling">
+              <label for="employeeMgt">
+                Employee Management
+              </label>
+
+              <select name="employeeMgt" id="employees" class="new">
+                <option value="none">Denied</option>
+                <option value="Employee Management">Granted</option>
+              </select>
+            </div>
+
+            <div class="column-span-full role-styling">
+              <label for="payRollMgt">
+                Payroll Management
+              </label>
+
+              <select name="payRollMgt" id="payRolls" class="new">
+                <option value="none" selected>Denied</option>
+                <option value="Payroll Management">Granted</option>
+              </select>
+            </div>
+
+            <div class="column-span-full role-styling">
+              <label for="notificationMgt">
+                Notification Management
+              </label>
+
+              <select name="notificationMgt" id="notifications" class="new">
+                <option value="none" selected>Denied</option>
+                <option value="Notification Management">Granted</option>
+              </select>
+            </div>
+
+          </section>
+          
+          <section id="submitButtonsTwo">
+            <!-- removed button links and added onclick functions -->
+            <button class="secondary-btn" type="button" value="Back" onclick="closeAndOpen()">
+              <h3>Back</h3>
+            </button>
+
+            <button class="primary-btn saveButton" value="Save">
+              <h3>Save</h3>
+            </button>
+          </section>
+
+        </fieldset>
+      </form>
+    </div>
+
+
+
+    </div>
+
+  </aside>
+
+  <script src="../../../javascript/popup.js"></script>
+  <script src="../../../javascript/dashboard.js"></script>
+  <script src="./crud.js"></script>
+  <script src="https://kit.fontawesome.com/3fe543f2b0.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

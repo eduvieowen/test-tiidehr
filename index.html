@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIIDE HR Homepage</title>
+
+    <link rel="stylesheet" href="/front-end/Pages/homepage/homepage.css" />
+
+   <!-- Animate on Scroll Library-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Required  Stylesheet Swiper JS Carousel Library-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+
+   
+  </head>
+  <body class="body">
+    <!-- ==================== HEADER  ==================== -->
+    <header class="header">
+      <div class="container">
+        <nav>
+          <div class="logo-wrapper">
+            <a class="logo" href="./index.html">
+              <img
+                src="/front-end/assets/images/logo.png"
+                alt="TIIDE HR logo"
+                class="logo-image"
+              />
+            </a>
+            <button
+              class="mobile-nav-toggle"
+              aria-controls="navigation"
+              aria-expanded="false"
+            >
+              <span class="sr-only"></span>
+            </button>
+          </div>
+          <div class="nav-aside">
+            <ul id="navigation navigation-desktop" class="navigation navigation-desktop">
+              <div class="nav-center">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+              </div>
+              <div class="nav-right">
+                <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                  Sign In</a
+                >
+                <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                  Sign Up</a
+                >
+              </div>
+            </ul>
+
+            <ul data-visible="false" id="navigation navigation-mobile" class="navigation navigation-mobile">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+              <li class="sign-in-link">
+                <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                  Sign In</a >
+              </li>
+              <li class="sign-up-link">
+                <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                  Sign Up</a>
+              </li>
+          </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <div class="hero-wrapper">
+          <section
+            class="hero-section container"
+          >
+              <div class="hero-text-wrapper" data-aos="fade-right">
+                <h2>A complete HR platform that saves you time.</h2>
+                <br />
+                <p>
+                  TIIDE HR streamlines your workflow by digitally connecting
+                  your employees, leave, level, role and notifications management, all
+                  in one platfrom.
+                </p>
+                <br />
+                <br />
+                <a href="./front-end/Pages/homepage/signup.html" class="call-to-action">Get Started</a>
+              </div>
+              <div class="swiper hero__image-container" data-aos="fade-left" data-aos-duration="4000">
+                <div  class=" swiper-wrapper" >
+                  <div class="slide__image-wrapper slide__image-wrapper-1 swiper-slide">
+                    <img src="/front-end/Assets/images/cvcv-min.jpg" alt="" /> </div>
+                
+                  <div class="slide__image-wrapper slide__image-wrapper-2 swiper-slide">
+                      <img src="/front-end/Assets/images/employeeMGT.png" alt="" />
+                    </div>
+                
+                    <div class="slide__image-wrapper slide__image-wrapper-3 swiper-slide">
+                      <img src="/front-end/Assets/images/leaveMGT.png" alt="" />
+                    </div>
+
+                    <div class="slide__image-wrapper slide__image-wrapper-4 swiper-slide">
+                      <img src="/front-end/Assets/images/levelMGT.png" alt="" />
+                    </div>
+
+                    <div class="slide__image-wrapper slide__image-wrapper-5 swiper-slide">
+                      <img src="/front-end/Assets/images/roleMGT.png" alt="" />
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                        <div class="swiper-pagination" style="color: #00afef;"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev" style="color: #000080;"></div>
+                        <div class="swiper-button-next" style="color: #000080;"></div>
+              </div>
+      
+            </div>
+      </div>
+    </div>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features-section">
+      <div class="container">
+        <div class="features">
+          <div class="features-section-head section__head ">WHY YOU SHOULD CHOOSE TIIDE HR</div>
+          <div class="features__wrapper">
+            <div
+              class="feature feature-1"
+              data-aos="fade-right"
+              data-aos-duration="4000"
+            >
+              <img src="/front-end/Assets/icons/check-circle.svg" alt="" />
+              <p>
+                Eliminate the manual processes, saving time and effort. Maintain
+                the professional and personal details of the employees and the
+                company in a safe and secured manner.
+              </p>
+            </div>
+            <div
+              class="feature feature-2"
+              data-aos="fade-left"
+              data-aos-duration="4000"
+            >
+              <img src="/front-end/Assets/icons/check-circle.svg" alt="" />
+              <p>
+                Utilize the standard metrics for employee management. Ability to
+                customize or create custom metrics for the needs of the staff
+                management with a simple user interface.
+              </p>
+            </div>
+            <div
+              class="feature feature-3"
+              data-aos="fade-right"
+              data-aos-duration="4000"
+            >
+              <img src="/front-end/Assets/icons/check-circle.svg" alt="" />
+              <p>
+                With a self-service portal, employees are more engaged and feel
+                more empowered thereby enriching the work experience of
+                employees.
+              </p>
+            </div>
+            <div
+              class="feature feature-4"
+              data-aos="fade-left"
+              data-aos-duration="4000"
+            >
+              <img src="/front-end/Assets/icons/check-circle.svg" alt="" />
+              <p>
+                Compliance with data security and privacy protocols. Top-level
+                access controls, encryption, and other robust security measures
+                are in place.
+              </p>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section
+      id="services"
+      class="services-section"
+      data-aos="fade-up"
+      data-aos-duration="000"
+    >
+      <div class="container">
+        <div class="services__wrapper">
+          <!--========= SERVICES SECTION HEADING =========-->
+          <div class="services-section-heading section__head">Services</div>
+
+          <div class="service top__service">
+            <div class="service__image-wrapper service-1">
+              <img src="/front-end/Assets/images/bnbnn.jpg" alt="" />
+            </div>
+            <div class="service__text service-2">
+              <div class="service__text-image">
+                <img src="/front-end/Assets/images/610413.png" alt="" />
+              </div>
+              <h2 class="service__text-summary">Centralized Communication</h2>
+              <p class="servive__text-description">
+                Share project plans and information in a central hub.
+              </p>
+            </div>
+            <div class="service__image-wrapper service=3">
+              <img src="/front-end/Assets/images/woman.jpeg" alt="" />
+            </div>
+            <div class="service__text service-4">
+              <div class="service__text-image">
+                <img src="/front-end/Assets/images/4550071.png" alt="" />
+              </div>
+              <h2 class="service__text-summary">Leave Management</h2>
+              <p class="servive__text-description">
+                Manage leave application and approval seamlessly with custom
+                leave management policies.
+              </p>
+            </div>
+            <div class="service__image-wrapper service-5">
+              <img src="/front-end/Assets/images/vcx.jpg" alt="" />
+            </div>
+            <div class="service__text service__text-secondary service-6">
+              <div class="service__text-image">
+                <img src="/front-end/Assets/images/1283187.png" alt="" />
+              </div>
+              <h2 class="service__text-summary">Employee Management</h2>
+              <p class="servive__text-description">
+                 Manage and
+                interact with your employees. Enable employee perform at
+                their best and achieve business goals
+              </p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="bottom__cta container" data-aos="fade-right">
+      <div class="bottom__cta-content full-width">
+        <p>Everything you need to automate employee workflow</p>
+        <a
+          href="/front-end/Pages/homepage/signup.html"
+          class="bottom__cta-button call-to-action"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer-area" data-aos="zoom-in-up" data-aos-duration="4000">
+      <div class="container">
+        <div class="footer">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <a class="logo" href="/index.html">
+                <img
+                  src="/front-end/assets/images/footer_logo.jpeg"
+                  alt="TIIDE HR logo"
+                  class="logo-image footer-logo-image"
+                />
+              </a>
+            </div>
+
+            <div class="footer-links-wrapper">
+              <a class="footer-link" href="/front-end/Pages/homepage/about.html">About</a>
+              <a class="footer-link" href="/front-end/Pages/homepage/privacy.html">Privacy Policy</a>
+              <a class="footer-link" href="/front-end/Pages/homepage/contact.html">Contact</a>
+            </div>
+          </div>
+          <hr class="footer-divider" />
+          <div class="footer-bottom">
+            <p>Copyright &copy; 2022 TIIDE HR. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--========= ANIMATE ON SCROLL JS CDN LINK =========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <!--========= SWIPER JS CDN LINK =========-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/front-end/Pages/homepage/javascript/homepage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+/* html body styling */
+body{
+    font-size: 1.5rem;
+    color: #000080;
+}
+/* create level container */
+.create-level{
+ width: 50%;
+ margin-left: auto;
+ margin-right: auto;
+ border: 1px solid #efefef;
+ border-radius: 20px;
+ padding: 2rem;
+ box-shadow: 0 0 10px #00000026;
+}
+/* title class */
+.form-top{
+    margin-bottom: 8px;
+}
+/* form input */
+.form-top input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: auto;
+    padding-right: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00000026;
+    border-color: #efefef;
+    width: 40%;
+    font-size: 1rem;    
+}
+/* form inline  */
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+/* adding margin to the form boxes */
+.form-inline label, .form-top label {
+    margin: 5px 10px 5px 0;
+}
+/* input box of the form */
+.form-inline input{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: auto;
+    padding-right: 10px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00000026;
+    border-color: #efefef;
+    font-size: 1rem;   
+}
+/* make input box responsive */
+@media (max-width: 950px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+}
+/* description input box */
+.description-box{
+    width: 95%;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #00000026;
+    border-color: #efefef;
+    margin-top: 8px;
+    padding: 10px;
+    font-size: 1rem   ;
+}
+/* description class */
+.description{
+    margin-top: 8px;
+}
+/* pop up container buttons styling */
+.back-links{
+    display: flex;
+    justify-content: space-between;
+}
+/* individual pop up container buttons styling */
+.back-links a {
+    text-decoration: none;
+    filter: 0.6;
+    color: white;
+    padding: 5px 28px;
+    border-radius: 20px;
+    margin: 30px;
+    border-color: #007EA7;
+    border: 1px solid black;
+    background-color: white;
+  }
+  /* pop up container buttons hover effect */
+.back-links a:hover{
+    background-color: grey;
+    color: grey;
+}
+/* pop up container save button styling */
+.back-links a.blue {
+    background-color: #000080;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+/* pop up container cancel buttons styling */
+.back-links a.cancel{
+    color: #000080;
+    border-color: #000080;
+    background-color: #edfaff;
+    text-shadow: 0px 3px #00000026;
+    font-weight: bold;    
+}
+/* make button responsive on small screen */
+@media screen and (max-width: 750px){
+    .back-links a{
+        margin: 10px;
+    }
+}    
+@media screen and (max-width: 620px){
+    .back-links {
+        flex-direction: column;
+        text-align: center;
+    }
+}  

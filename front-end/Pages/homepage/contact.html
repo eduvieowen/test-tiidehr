@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact TIIDE HR</title>
+    <link rel="stylesheet" href="contact.css">
+
+     <!-- Animate on Scroll Library-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+</head>
+<body class="body">
+    
+    <header class="header">
+        <div class="container">
+          <nav>
+            <div class="logo-wrapper">
+              <a class="logo" href="../../../index.html">
+                <img
+                  src="/front-end/assets/images/logo.png"
+                  alt="TIIDE HR logo"
+                  class="logo-image"
+                />
+              </a>
+              <button
+                class="mobile-nav-toggle"
+                aria-controls="navigation"
+                aria-expanded="false"
+              >
+                <span class="sr-only"></span>
+              </button>
+            </div>
+            <div class="nav-aside">
+              <ul id="navigation navigation-desktop" class="navigation navigation-desktop">
+                <div class="nav-center">
+                  <li><a href="../../../index.html">Home</a></li>
+                  <!-- <li><a href="#">Platform</a></li> -->
+                  <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+                </div>
+                <div class="nav-right">
+                  <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                    Sign In</a
+                  >
+                  <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                    Sign Up</a
+                  >
+                </div>
+              </ul>
+  
+              <ul data-visible="false" id="navigation navigation-mobile" class="navigation navigation-mobile">
+                <li><a href="../../../index.html">Home</a></li>
+                <!-- <li><a href="#">Platform</a></li> -->
+                <li><a href="/front-end/Pages/homepage/about.html">About</a></li>
+                <li class="sign-in-link">
+                  <a href="/front-end/Pages/homepage/signin.html" class="sign-in">
+                    Sign In</a >
+                </li>
+                <li class="sign-up-link">
+                  <a href="/front-end/Pages/homepage/signup.html" class="sign-up">
+                    Sign Up</a>
+                </li>
+            </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+       <!-- ==================== MAIN CONTENT ==================== -->
+       <main >
+
+        <section class="hero-section container">
+            <span class="big-circle"></span>
+            <div class="hero container">
+                <div class="text" data-aos="fade-right" data-aos-duration="6000">
+                    <h4>CONTACT</h4>
+                    <h1>How can we help?</h1>
+                    <p>We're here to help and answer any question you might have, We look forward 
+                      to hearing from you. <span> 🙂</span></p>
+                      <!-- <img class="contact-icon" src="../../Assets/icons/contact.svg" alt=""> -->
+                      <img class="contact-icon" src="../../Assets/icons/contact1.svg" style="width: 604; height: 328" alt="">
+                </div>
+                <div class="contact-form-container" data-aos="fade-left" data-aos-duration="6000">
+                  <div class="form-heading">Let's talk</div>
+                    <form action="" class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label name="fname" for="fname">First Name</label>
+                            <input name="fname" type="text" id="fname" >
+                        </div>
+                        <div class="form-group">
+                            <label name="lname" for="lname">Last Name</label>
+                            <input name="lname" type="text" id="lname" >
+                        </div>
+                        <div class="form-group">
+                            <label name="email" for="email">Company Email</label>
+                            <input name="email" type="email" id="email" >
+                        </div>
+                        <div class="form-group">
+                          <label name="subject" for="subject">Message Subject</label>
+                          <input name="subject" type="text" id="subject" >
+                      </div>
+                        <div class="form-group"> 
+                          <label for="message">Message</label>
+                      <textarea name="" id="message" clas="State"></textarea>
+                    </div>
+
+                      <div class="form-group">
+                        <button type="submit" class="send-btn" href="#">Send Message</button>
+                      
+                      </div>   
+                    </form>
+                </div>
+            </div>
+        </section>
+         
+            
+            <!-- <img class="svg-shape" src="/front-end/Assets/icons/angle.svg" alt=""></div> -->
+
+        
+       <!-- ==================== TEAM SECTION ==================== -->
+      
+       
+       </main>
+
+
+
+        <!-- ==================== FOOTER ==================== -->
+        <!-- data-aos="zoom-in-up" data-aos-duration="4000" -->
+    <footer class="footer-area" >
+        <div class="container">
+          <div class="footer">
+            <div class="footer-top">
+              <div class="footer-logo">
+                <a class="logo" href="../../../index.html">
+                  <img
+                    src="/front-end/assets/images/footer_logo.jpeg"
+                    alt="TIIDE HR logo"
+                    class="logo-image footer-logo-image"
+                  />
+                </a>
+              </div>
+  
+              <div class="footer-links-wrapper">
+                <a class="footer-link" href="/front-end/Pages/homepage/about.html">About</a>
+                <a class="footer-link" href="/front-end/Pages/homepage/privacy.html">Privacy Policy</a>
+                <a class="footer-link" href="#">Contact</a>
+              </div>
+            </div>
+            <hr class="footer-divider" />
+            <div class="footer-bottom">
+              <p>Copyright &copy; 2022 TIIDE HR. All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+
+     <!--========= ANIMATE ON SCROLL JS CDN LINK =========-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <script src="./javascript/contact.js"></script>
+  
+</body>
+</html>

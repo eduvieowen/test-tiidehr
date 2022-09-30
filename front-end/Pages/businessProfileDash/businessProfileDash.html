@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="general.css"> -->
+  <link rel="stylesheet" href="businessProfileDash.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+
+  <title>TIIDE-HR | Leave History</title>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <section id="topBar">
+    <!-- logo -->
+    <img src="./icons/logo.png" alt="" />
+
+    <!-- Search -->
+    <div class="searchbar">
+      <input type="search" name="" id="" class="input-width-max" />
+      <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+      <div class="search-icon-div">
+        <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+      </div>
+        
+    </div>
+
+    <!-- time and date -->
+    <div id="topBar-texts">
+      <div id="topBar-time-and-date">
+
+        <div class="ttTime">
+          <!-- <p>Time</p> -->
+          <p id="topBar-time" class="small-text-bold">
+            <span class="hour"> 11</span>:
+            <span class="minutes">27</span>
+          <span class="am-pm">am</span>
+        </p>
+      </div>
+
+      <div class="ttDate">              
+        <!-- <p>Date</p> -->
+        <p id="topBar-date" class="small-text-bold">
+          <span class="Month">Aug </span>
+          <span class="day">06</span>,
+          <span class="year">2022</span>
+        </p>
+      </div>
+
+      </div>
+
+      <!-- topbar profile -->
+
+      <div class="" id="topbar-profile">
+    <i class="fa-solid fa-user userph"></i>
+          <div id="topbar-profile-text">
+          <h4 class="small-text-bold" id="userFullName">
+            Olaseni Sanyaolu
+          </h4>
+          <h4 class="small-text-italic" id="dept">BackEnd</h4>
+        </div>
+      </div>
+    </div>
+
+    <i class="fa-solid fa-bars" id="fa-bars"></i>
+  </section>
+
+  <!-- main section -->
+  <main>
+    <!-- side bar -->
+    <section id="sidebar" class="sidebar">
+      <!-- top side bar -->
+      <div id="sidebar-nav">
+        <!-- Dashboard with active class -->
+        <div id="arrow-box" onclick="toggleArrow()"> <!-- -->
+          <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+        </div>
+        <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+        <!-- Dashboard -->
+        <label class="page-link" for="Dashboard">
+          <i class="fa-solid icon-14 fa-table-columns"></i>
+          <a href="../employerDashboard/employerDashboard.html"class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+        </label>
+
+        <!-- roles -->
+        
+        <label class="page-link" for="role-link">
+          <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+          <a href="../Role management/RoleMgtDashboard/RoleMgtDashB.html"class="link"  name="role-link" id="role-link">Role</a>
+        </label>
+        
+        <!-- levels -->
+       
+        <label class="page-link" for="levels-link">
+          <i class="fa-solid icon-14 fa-layer-group"></i>
+          <a href="../Level_Management/level_management.html"class="link"  name="levels-link" id="levels-link">Levels</a>
+        </label>
+
+        <!-- Leaves -->
+        
+        <label class="page-link" for="leave-link">
+          <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+           <a href="../LeaveManagement/leaveManagement.html"class="link"  name="leave-link" id="leave-link">Leave</a>
+        </label>
+
+
+        <!-- Employee -->
+        
+        <label class="page-link" for="employee-link">
+          <i class="fa-solid icon-14 fa-people-roof"></i>
+           <a href="../EmployeeManagement/employeeMgt.html"class="link"  name="employee-link" id="employee-link">Employees</a>
+        </label>
+
+        <!-- notification -->
+        
+        <label class="page-link inactive" for="notification-link"> 
+          <i class="fa-solid icon-14 fa-bell"></i>
+           <a href=""class="link"  name="notification-link" id="notification-link">Notification</a>
+        </label>
+
+
+        <!-- Business Profile -->
+        
+        <label class="page-link active" for="business-profile-link"> 
+          <i class="fa-solid icon-14 fa-building"></i>
+           <a href="./businessProfileDash.html"class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+        </label>
+        <!-- Contact us -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-address-card"></i>
+          <a href="../../Pages/homepage/contact.html"class="link"  name="sign-out" id="sign-out">Contact us</a>
+        </label>
+
+        <!-- Sign out -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+          <a href="../../../index.html"class="link"  name="sign-out" id="sign-out">Sign Out</a>
+        </label>
+      </div>
+    </section>
+    <!-- content section -->
+    <section class="general-container">
+      <section id="container-forms">
+        <div class="profile-logo">
+          <img class="contiainer-logo" src="./icons/logo.png" alt="" />
+          <div class="edit-profile">Edit Logo</div>
+        </div>
+          <h1 >Business Details</h1>
+          <div class="field">
+            <div class="label-color">Business Name</div>
+            <input type="text" class="input-field" id="name">
+          </div>
+        <div>
+          <div class="label-color">Business Email</div>
+          <input type="text" class="input-field" id="email">
+        </div>
+        <div>
+          <div class="label-color">Business Address</div>
+          <input type="text" class="input-field" id="address">
+        </div>
+        <div>
+          <div class="label-color">CAC Registration Detail</div>
+          <input type="text" class="input-field" id="cac">
+        </div>
+        <div>
+          <div class="label-color">RC Number</div>
+          <input type="text" class="input-field" id="rc">
+        </div>
+        <div>
+          <div class="label-color">Tax Identification Number</div>
+          <input type="text" class="input-field" id="tin">
+        </div>
+        <div>
+          <div class="label-color">Select Currency</div>
+          <!-- <input type="text" class="input-field" id="tin"> -->
+          <select class="input-field" name="currency" id="currency">
+            <option value="naira">Naira</option>
+            <option value="dollar">Dollar</option>
+          </select>
+        </div>
+        <div class="register">
+          <button id="save"><h3>Save</h3></button>
+        </div>
+      </section>
+  
+      <section class="side-container">
+        <section class="password-close">
+          <!-- <h1>Change Password</h1>
+          <p>
+            You can change your password here or permanently close your account.
+          </p>
+          <p class="edit-profile">Change Password</p> -->
+          <div class="dp-preview">
+            <!-- <img src="AD.png" alt=""> -->
+            <!-- <i class="fa-solid fa-user big"></i> -->
+
+            <div class="dp-text">
+              <div class="info-flex">   
+                <i class="fa-solid fa-user"></i>           
+                <span class="email-preview" id="name-preview">Business name</span>
+              </div>
+              <div class="info-flex">      
+                <i class="fa-solid fa-envelope"></i>        
+                <span class="email-preview" id="email-preview">Business email</span>
+              </div>
+                            
+              <div class="info-flex">   
+                <i class="fa-solid fa-address-card"></i>           
+                <span class="phone-preview" id="address-preview">Business address</span>                          
+              </div>
+
+              <div class="info-flex">    
+                <i class="fa-solid fa fa-book fa-fw"></i>           
+                <span id="cac-preview">CAC number</span>
+              </div>
+              <div class="info-flex">             
+                <i class="fa-solid fa fa-pencil fa-fw"></i>  
+                <span id="rc-preview">RC number</span>
+              </div>
+              <div class="info-flex">               
+                <i class="fa-solid fa-home fa-fw"></i>
+                <span id="tin-preview">TIN number</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="password-close">
+          <h1>Add Employee</h1>
+          <p>
+            You can andd an employee into your organization from here.
+          </p>
+          <a href="../EmployeeManagement/employeeMgt.html" style="text-decoration: none; color: #fff;"><p class="edit-profile">Add Employee</p></a>
+        </section>
+      </section>
+    </section>
+
+    <script src="./businessProfileDash.js"></script>
+    <script src="../../javascript/dashboard.js"></script>
+    <script src="https://kit.fontawesome.com/c371471545.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

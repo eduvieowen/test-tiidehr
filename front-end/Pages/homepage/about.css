@@ -1,0 +1,526 @@
+/*==================== CSS Reset ====================*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+ /*========== Font and typography ==========*/
+ --body-font: "Poppins", sans-serif;
+
+ /* .5rem = 8px, 1rem = 16px, 1.25rem = 20px, 1.5rem = 24px... */
+ --big-font-size: 1.25rem;
+ --h1-font-size: 1.5rem;
+ --h2-font-size: 1.25rem;
+ --h3-font-size: 1.125rem;
+ --normal-font-size: 1rem;
+ --hero-paragraph: 1.3125rem;
+
+  /*========== Font weight ==========*/
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  /*========== Logo Size ==========*/
+  --logo-width: 6.881rem;
+  --logo-height: 3.34rem;
+  --form-logo-width: 7.2rem;
+  --form-logo-height: 5rem;
+  --footer-logo-width: 4rem;
+  --footer-logo-height: 5rem;
+  
+  
+
+   /*========== Header Padding ==========*/
+   --header-pt: 0.75rem;
+   --header-pb: 0.75rem;
+
+
+  /*========== Colors ==========*/
+  /* Change favorite color */
+  --primary-hue-color: 240;
+  --secondary-hue-color: 0;
+  /* HSL Color Mode */
+  --text-color-white: hsl(var(--secondary-hue-color), 0%, 100%);
+  --text-color-purple: hsl(var(--primary-hue-color), 100%, 25%);
+  --text-color-black: #000000;
+  --body-first-color: hsl(var(--secondary-hue-color), 0%, 100%);
+  --body-second-color: hsl(var(--primary-hue-color), 100%, 25%);
+}
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body {
+   font-family: var(--body-font);
+   
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    padding-top: var(--header-pt);
+    padding-bottom: var(--header-pb);
+    background-color: var(--body-first-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding-bottom: 5px ;
+}
+.mobile-nav-toggle {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
+.logo-wrapper {
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+.logo-wrapper button {
+    display: none;
+}
+ .logo-image  {
+    width: var(--logo-width);
+    height: var(--logo-height);
+}
+.nav-aside {
+    align-self: flex-end;
+}
+.nav-aside .navigation-desktop {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: var(--font-bold);
+}
+.navigation div {
+    display: flex;
+}
+.navigation .nav-center {
+    margin-right: 16rem;
+}
+.navigation li a {
+  color: var(--text-color-purple);
+  margin-left: 2.5rem;
+}
+ .nav-right {
+    display: flex;
+    justify-content: space-between;
+}
+ .sign-in {
+    border:2px solid hsl(var(--primary-hue-color), 100%, 25%) ;
+    padding: .5rem 1.25rem;
+    border-radius: 1000px;
+    background-color: #ffffff;
+    color: var(--text-color-purple);
+    margin-right: 1.3rem;
+}
+ .sign-up {
+    background-color: hsl(var(--primary-hue-color), 100%, 25%);
+    color: hsl(var(--secondary-hue-color), 0%, 100%);
+    padding: .5rem 1.25rem;
+    border-radius: 1000px;
+    border-color: transparent;
+}
+.nav-right .sign-in:hover {
+    background-color: var(--text-color-purple);
+    color: #ffffff;
+  }
+  .nav-right .sign-up:hover {
+    background-color: #ffffff;
+    color: var(--text-color-purple);
+    border: 2px solid hsl(var(--primary-hue-color), 100%, 25%);
+  
+  }
+.navigation li a:hover {
+ opacity: .75;
+}
+.navigation-mobile {
+    display: none;
+}
+
+/*==================== MAIN CONTENT ====================*/
+.brief__section {
+    margin-top: 3rem;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brief__section .left {
+    width: 45%;
+    font-weight: var(--font-bold);
+}
+.brief__section .right {
+    width: 40%;
+}
+.left span  {
+    font-size: 2.8rem;
+}
+.hero-text .solution {
+    color: #000080;
+}
+.right p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+.brief__image img {
+    width: 100%;
+}
+.descriptive__section {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.description__card {
+    width: 32%;
+    padding: 1.5rem ;
+    border-radius: 10px;
+}
+.description__card p {
+    line-height: 1.5;
+}
+.services {
+    background-color: rgba(236, 243, 255, 0.6);
+}
+.goal {
+    background-color: rgba(247, 223, 245, 0.6);
+}
+.mission {
+    background: rgba(220, 245, 222, 0.6);
+}
+
+/*==================== TEAM SECTION ====================*/
+.team-section {
+    overflow: hidden;
+    width: 100%;
+    height: 72vh;
+    margin: 5rem 0 5rem 0;
+}
+.team-section .section-head {
+    text-align: center;
+    font-size: 21px;
+    font-weight: var(--font-bold);
+}
+.section-head  {
+    color: #000080;
+}
+.swiper-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    padding-top: 59px;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-slide-container {
+    font-size: 18px;
+    height: 200px;
+    max-width: 100%;
+    transform: 0.5s;
+}
+.swiper-slide-container > div {
+    height: 100%;
+    width: 100%;
+    transform: 0.5s;
+}
+.swiper-slide-container .heading-span {
+    display: block;
+    font-size: 36px;
+}
+.swiper-slide-container p {
+    display: none;
+}
+p .stack {
+    color: #000080;
+}
+.swiper-slide-active {
+    width: 400px !important;
+    padding: 0;
+    margin: 0;
+}
+.swiper-slide-active .swiper-slide-container .details p,
+.swiper-slide-active .swiper-slide-container h1 {
+  display: block;
+}
+.swiper-slide-active .swiper-slide-container {
+    transition: 0.5s;
+    max-width: 100%;
+}
+.swiper-slide-active .swiper-slide-container div {
+    height: 320px;
+    transition: 0.5s;
+}
+.swiper-slide-active .swiper-slide-container .title {
+    margin-top: 8px;
+}
+.swiper-slide-active .swiper-slide-container .role {
+    margin-top: -295px;
+}
+
+.swiper-pagination {
+    top: 30rem  !important;
+}
+.swiper-pagination-bullet {
+    opacity: 1;
+    background: #00afef  !important;
+    height: 30px !important;
+    width: 30px !important;
+    border-radius : 50% !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1 !important; 
+    background: #00afef !important;
+    height: 10px !important;
+    width: 30px !important;
+    border-radius: 10% !important;
+}
+
+.prev-btn, .next-btn {
+    display: none;
+}
+.fix-resolution img {
+    object-position: 20% 20%;
+}
+
+
+/*==================== FOOTER====================*/
+.footer-area {
+    background-color: #000080;
+    color: #fff;
+    /* margin-top: 6rem; */
+}
+.footer {
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
+    
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links-wrapper {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* .footer-logo-image {
+    width: var(--footer-logo-width);
+} */
+.footer-link {
+    color: #fff;
+}
+.footer-link:hover {
+    opacity: 0.75;
+  }
+.footer-divider {
+    height: 1px;
+    margin-top: 1rem;
+    background-color: #fff;
+    border: none;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+
+/* For Tablets (min-width: 750px) and  */
+@media  (max-width: 1024px) {
+    .logo-wrapper .mobile-nav-toggle {
+        display: block;
+        background: url("/front-end/Assets/icons/home-menu.svg");
+        padding: .6rem;
+        position: absolute;
+        width: 1.4rem;
+        aspect-ratio: 1;
+        right: 2.5rem;
+        top: 2rem;
+        z-index: 9999;
+        border: none;
+    }
+     .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url("/front-end/Assets/icons/close-svg.svg");
+        background-repeat: no-repeat;
+        
+      }
+      .nav-aside .navigation-desktop {
+        display: none;
+      }
+      .nav-aside .navigation-mobile {
+        display: block;
+        flex-direction: column;
+        position: fixed;  
+        list-style: none;
+        width: 100%;
+        top: 4.6rem;
+        left: -100%;
+        padding: min(2vh, 6rem) 0;
+        font-size: 1.1rem;
+        background-color: hsl(0, 0%, 100%);
+        height: 100vh;
+        transition: transform 350ms ease-in;
+        font-weight: var(--font-semi-bold);
+      }
+      .nav-aside .navigation[data-visible="true"] {
+        transform: translateX(100%);
+      }
+      .sign-in-link, .sign-up-link {
+        margin: 1rem 0;
+      }
+      .navigation-mobile li {
+        padding: 1.2rem 0;
+        color: #000080;
+        border-bottom: 1px solid #00000033;
+      }
+      .navigation-mobile .sign-up {
+        color: white;
+      }
+      /* Team Section */
+      .swiper-wrapper {
+        top: 0;
+      }
+      .team-section {
+        margin-bottom: 2rem;
+        height: 55vh;
+      }
+      .swiper-button-prev {
+        top: 20rem !important;
+    }
+    .swiper-button-next {
+        top: 20rem !important;
+    }
+      /* Footer area */
+      .footer-area {
+        margin-top: 0;
+      }
+      
+    }
+    @media (min-width: 671px) and (max-width:900px) {
+        .descriptive__section {
+            flex-wrap: wrap;
+        }
+        .description__card {
+            width: 48%;
+            margin-top: 1.2rem;
+          }
+          .swiper-wrapper {
+            top: 0;
+          }
+
+    }
+
+    @media(max-width:670px) {
+        .brief__section {
+            flex-direction: column;
+            margin-top: 0.5rem;
+            gap: 1rem;
+            padding: 3rem 0;
+        }
+        .brief__section .left, .brief__section .right {
+            width: 100%;
+        }
+        .left span  {
+            font-size: 2rem;
+        }
+        .descriptive__section {
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 0;
+        }
+        .description__card {
+            width: 100%;
+        }
+        .team-section {
+            height: 60vh;
+            margin: 1rem 0 2rem 0;
+        }
+        .swiper-slide-active {
+            padding: 0;
+            margin: 0;
+        }
+        .swiper-pagination {
+            display: none;
+        }
+        .swiper-button-prev {
+            top: 22.9rem !important;
+            /* width: 20px !important; */
+            /* border-radius: 50%; */
+            /* padding: 1.5rem; */
+            font-size: 5px !important;
+            margin-left: 65%;
+            /* background: url("/front-end/Assets/icons/arrow-left-circle.svg");
+            background-repeat: no-repeat; */
+            /* width: 0.2rem;
+            aspect-ratio: 4; */
+        }
+        .swiper-button-next {
+            top: 23rem !important;
+            /* font-size: 15px !important; */
+            /* background: url("/front-end/Assets/icons/arrow-right-circle.svg");
+            background-repeat: no-repeat; */
+            /* width: 0.2rem;
+            aspect-ratio: 1; */
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            content: "" !important;
+        }
+        
+        .footer-logo-image {
+            width: var(--footer-logo-width);
+            height: var(--footer-logo-height);
+            object-fit: contain;
+            object-position: center;
+        }
+        .footer-links-wrapper {
+            flex-direction: column;
+            width: 35%;
+            gap: .8rem;
+            font-size: 15px;
+          }
+          .footer-bottom {
+            font-size: 14px;
+          }
+          .form-wrapper__signin {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .swiper-slide img {
+            height: 300px;
+        }
+        /* Make some images fit well..the mobile fit styles was applied to images with undesired object positions */
+        .mobile-fit {
+            object-position: 20% 20%;
+        }
+        .mobile-fit-well {
+            object-position: 0% -70%;
+        }
+      }

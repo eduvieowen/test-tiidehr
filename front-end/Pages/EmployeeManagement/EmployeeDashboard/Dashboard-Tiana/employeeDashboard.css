@@ -1,0 +1,121 @@
+#section-container{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    flex-wrap: wrap;
+    background-color: var(--very-light-grey);
+    height: 100%;
+    border-radius: 15px;
+}
+
+.sub-container{
+    width: 47%;
+}
+
+.sub-container-topbar{
+    height: 50px;
+    width: 100%;
+    background-color: #3552af;
+    margin-bottom: 15px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+}
+
+#left-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sub-sub-container{
+    height: 48%;
+    
+}
+
+.activities-content{
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.activities{
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nots-icons{
+    position: relative;
+    
+}
+
+.nots-icons .fa-bell{
+    color: white;
+}
+
+.nots-icons .fa-circle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: red;
+    font-size: 5px;
+}
+
+.inputs{
+    border-bottom: 1px solid var(--light-grey);
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+   
+}
+
+.inputs-top{
+    display: flex;
+}
+.inputs #title{
+    width:80%;
+    flex:1;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey);
+    padding-left: 10px;
+}
+
+.inputs #task{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--light-grey);
+    margin: 5px 0 5px 0;
+    padding-left: 10px ;
+}
+.inputs-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* RIGHT SECTION */
+#right-section{
+    height: 100%;
+}
+
+/* RESPONSIVENESS */
+/* media query for medium screens */
+@media (max-width: 768px) {
+    #section-container{
+        flex-direction: row;
+    }
+
+    .sub-container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,43 @@
+#popupContainer h4,
+#popupContainer h5 {
+    color: var(--primary-blue);
+}
+
+#popupContainerTwo h4,
+#popupContainerTwo h5 {
+    color: var(--primary-blue);
+}
+
+#popupContainer,
+#popupContainerTwo {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+
+    justify-content: center;
+    align-items: center;
+    display: none;
+    /* border: 1px solid red; */
+}
+
+.popup-content {
+    border-radius: 2vw;
+    width: fit-content;
+    height: fit-content;
+
+    /* padding: 2vw; */
+    margin-top: 5%;
+    margin-left: 12%;
+
+    background-color: var(--white);
+
+    /*  */
+
+}
+
+.blur {
+    filter: blur(3px);
+    transition: 300ms all;
+}

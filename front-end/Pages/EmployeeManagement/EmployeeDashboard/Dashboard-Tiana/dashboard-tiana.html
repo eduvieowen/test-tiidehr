@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../../css/dashboard.css" />
+    <!-- <link rel="stylesheet" href="general.css"> -->
+    <link rel="stylesheet" href="employeeDashboard.css">
+
+    <title>TIIDE-HR</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <section id="topBar">
+      <!-- logo -->
+      <img src="../../icons/logo.png" alt="" />
+
+      <!-- Search -->
+      <div class="searchbar">
+        <input type="search" name="" id="" class="input-width-max" />
+        <div class="search-icon-div">
+          <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+        </div>
+          
+      </div>
+
+      <!-- time and date -->
+      <section id="topBar">
+        <!-- logo -->
+        <img src="./icons/logo.png" alt="" />
+
+        <!-- Search -->
+        <div class="searchbar">
+          <input type="search" name="" id="" class="input-width-max" />
+          <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+          <div class="search-icon-div">
+            <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+          </div>
+            
+        </div>
+
+        <!-- time and date -->
+        <div id="topBar-texts">
+          <div id="topBar-time-and-date">
+
+            <div class="ttTime">
+              <!-- <p>Time</p> -->
+              <p id="topBar-time" class="small-text-bold">
+                <span class="hour"> 11</span>:
+                <span class="minutes">27</span>
+              <span class="am-pm">am</span>
+            </p>
+          </div>
+
+          <div class="ttDate">              
+            <!-- <p>Date</p> -->
+            <p id="topBar-date" class="small-text-bold">
+              <span class="Month">Aug </span>
+              <span class="day">06</span>,
+              <span class="year">2022</span>
+            </p>
+          </div>
+
+          </div>
+
+          <!-- topbar profile -->
+
+          <div class="" id="topbar-profile">
+        <i class="fa-solid fa-user userph"></i>
+              <div id="topbar-profile-text">
+              <h4 class="small-text-bold" id="userFullName">
+                Olaseni Sanyaolu
+              </h4>
+              <h4 class="small-text-italic" id="dept">BackEnd</h4>
+            </div>
+          </div>
+        </div>
+
+        <i class="fa-solid fa-bars" id="fa-bars"></i>
+      </section>
+
+      
+      <i class="fa-solid fa-bars" id="fa-bars"></i>
+    </section>
+
+    <!-- main section -->
+    <main id="main">
+      <!-- side bar -->
+      <section  class="sidebar" id="sidebar">
+        <!-- top side bar -->
+        <div id="sidebar-nav">
+          <!-- Dashboard with active class -->
+          <div id="arrow-box" onclick="toggleArrow()" > <!-- -->
+            <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+          </div>
+          <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+          <!-- Dashboard -->
+          <label class="page-link active" for="Dashboard">
+            <i class="fa-solid icon-14 fa-table-columns"></i>
+            <a href=""class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+          </label>
+
+          <!-- roles -->
+          
+          <label class="page-link display-none" for="role-link">
+            <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+            <a href="../../../Role management/RoleMgtDashboard/RoleMgtDashB.html" class="link"  name="role-link" id="role-link">Role</a>
+          </label>
+          
+          <!-- levels -->
+         
+          <label class="page-link display-none" for="levels-link">
+            <i class="fa-solid icon-14 fa-layer-group"></i>
+            <a href="../../../Level_Management/level_management.html" class="link"  name="levels-link" id="levels-link">Levels</a>
+          </label>
+
+          <!-- Leaves -->
+          
+          <label class="page-link" for="leave-link">
+            <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+             <a href="../../../LeaveManagement/empLeaveDashB.html" class="link"  name="leave-link" id="leave-link">Leave</a>
+          </label>
+
+
+          <!-- Employee -->
+          
+          <label class="page-link display-none" for="employee-link">
+            <i class="fa-solid icon-14 fa-people-roof"></i>
+             <a href="../../employeeMgt.html" class="link"  name="employee-link" id="employee-link">Employees</a>
+          </label>
+
+          <!-- notification -->
+          
+          <label class="page-link inactive" for="notification-link"> 
+            <i class="fa-solid icon-14 fa-bell"></i>
+             <a href="" class="link"  name="notification-link" id="notification-link">Notification</a>
+          </label>
+
+
+          <!-- Business Profile -->
+          
+          <label class="page-link display-none" for="business-profile-link"> 
+            <i class="fa-solid icon-14 fa-building"></i>
+             <a href="../../../businessProfileDash/businessProfileDash.html" class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+          </label>
+
+          <!-- Sign out -->
+          <label class="page-link" for="sign-out">
+            <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+            <a href="../../../../../index.html" class="link"  name="sign-out" id="sign-out">Sign Out</a>
+          </label>
+        </div>
+      </section>
+
+<!-- content section -->
+<section id="content-area">
+  <!-- Section Container -->
+  <div id="section-container">
+
+    <!-- LEFT SECTION -->
+  <div id="left-section" class="sub-container">
+      <!-- FOR ACTIVITY -->
+    
+    <div id="activity" class="sub-sub-container">
+      <div class="sub-container-topbar">
+        <h4>Activity</h4>
+        <i class="fa-solid fa-bars-progress"></i>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="activities-content">
+        <div class="activities">
+          <div><h5>Morning Standups</h5>
+          <p>Morning standups to observe
+             announcements, attendance and assigned tasks. Time: 9:00(AM)</p></div>
+
+        </div>
+
+        <div class="activities">
+          <div><h5>Team Excursion</h5>
+          <p>All teams will be visiting Terragon by Friday. Time: 9:00(AM)</p></div>
+
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- NOTIFICATION -->
+    <div id="notification" class="sub-sub-container">
+      <div class="sub-container-topbar">
+        <h4>Notifications</h4>
+        <div class="nots-icons"><i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-bell"></i></div>
+      </div>
+
+      <div class="activities-content">
+        <div class="activities">
+        <div><h5>Project Overview</h5>
+          <p>Team Meeting has been scheduled for the review of projects by the senior devs and Head of Department.
+            Time:12:00(PM) Prompt.
+          </p></div>
+        </div>
+
+        <div class="activities">
+        <div><h5>Games Night</h5>
+          <p>Games night will hold on Friday. Time: 8:00(PM) Prompt. Anticipate.</p></div>
+
+        </div>
+
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <!-- RIGHT SECTION -->
+  <div id="right-section" class="sub-container">
+    <!-- ADD TASK--- -->
+    <div id="add-task">
+      <div class="sub-container-topbar">
+        <h4>Add Task</h4>
+        <i class="fa-solid fa-circle-plus"></i>
+      </div>
+
+      <!-- CONTENT  -->
+      <div class="task-content">
+
+        <div class="activities-content">
+          <div class="inputs">
+            <div class="input-top">
+              <input type="text" id="title">
+              <input type="submit" id="submit" class="primary-button">
+            </div>
+            <input type="text" id="task" >
+
+          </div>
+          <div class="activities">
+           <div> <h5>Make WireFrame & Sketch</h5>
+            <p> For Team Project. DeadLine: 3:00PM 
+              Wednesday 
+            </p></div>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+
+          <div class="activities">
+            <div><h5>UI Team meeting</h5>
+            <p>Conclude the designs for the New Project Time: 11:00AM</p></div>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+
+
+        </div>
+        <div class="activities-content">
+          <div class="activities">
+            <div><h5>Lunch Break</h5>
+            <p>Time: 11:45AM</p></div>
+            <i class="fa-regular fa-trash-can"></i>
+  
+          </div>
+
+          <div class="activities">
+            <div><h5>Meeting with Clients </h5>
+            <p>by 1:00PM</p></div>
+            <i class="fa-regular fa-trash-can"></i>
+
+          </div>
+
+
+        </div>
+        <div class="activities-content">
+          <div class="activities">
+            <div><h5>Closing Time</h5>
+            <p>Brief meeting with team lead before leaving. by 4:00PM
+            </p></div>
+            <i class="fa-regular fa-trash-can"></i>
+          </div>
+           
+          </div>
+        
+      </div>
+      </div>
+
+    </div>
+  </div>
+  
+</section>
+
+<script src="../../../../javascript/dashboard.js"></script>
+<script src="addtask.js"></script>
+<script src="https://kit.fontawesome.com/42ae1fcce9.js" crossorigin="anonymous"></script>    
+  </body>
+</html>

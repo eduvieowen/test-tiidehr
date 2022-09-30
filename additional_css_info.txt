@@ -1,0 +1,57 @@
+font:
+google-font: poppins
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+regular 14
+
+bold 14 (side nav links)
+bold 12 
+bold 24 h3 (buttons)
+bold 32 h4 eg (page headings)
+bold 48 h5
+
+medium italics 24
+
+####################################################################
+
+Color code:
+
+primary-blue: #000080
+white: #ffffff
+very-light-grey: #f5f5f5
+ligth-grey: #c4c4c4
+light-blue: #edfaff
+red: #ff0000
+black: #000000
+green: #2bd71c
+
+####################################################################
+
+drop-shadow details:
+#000000
+50%
+x-offset:0
+y-offset:0
+blur: 15
+
+
+
+
+dump
+/* utility code */
+.hover-shadow-box-animation {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    margin: 10px;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+  }
+  .hover-shadow-box-animation:hover,
+  .hover-shadow-box-animation:focus,
+  .hover-shadow-box-animation:active {
+    box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+    transform: scale(1.2);
+  }

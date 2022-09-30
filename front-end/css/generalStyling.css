@@ -1,0 +1,159 @@
+/* COLOUR PALETTE */
+:root {
+    --borderR: 2px solid red;
+    --borderG: 2px solid green;
+
+    --primary-blue: #000080;
+    --primary-pink: #fe8fa2;
+    --primary-green: #138808;
+    --primary-red: #d40000;
+    --primary-orange: #f49f0a;
+
+    --secondary-blue: #008df9;
+
+    --light-grey: #c4c4c4;
+    --light-blue: #c2e2f5;
+
+    --very-light-grey: #e3e3e3;
+    
+    --white: #ffffff;
+    --black: #000000;
+    --red: #ff0000;
+    --green: #2bd71c;
+}
+/* backgound colours */
+.sec-blue-bg {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+.green-bg {
+    background-color: var(--primary-green);
+    color: var(--white);
+}
+
+.orange-bg {
+    background-color: var(--primary-orange);
+    color: var(--white);
+}
+
+.red-bg {
+    background-color: var(--primary-red);
+    color: var(--white);
+}
+
+.pink-bg {
+    background-color: var(--primary-pink);
+    color: var(--white);
+}
+
+/* TEXT STYLE CLASSES */
+.normal-text,
+p, td {
+    font-weight: 500;
+    font-size: 14px;
+}
+.small-text-italic{
+    font-size: 10px;
+    font-style: italic;
+}
+.small-text-bold {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.normal-text-bold,
+button {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.large-text-bold {
+    font-size: 24px;
+    font-weight: 700;
+}
+.large-text{
+    font-size: 18px;
+}
+
+.Xlarge-text-bold {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.XX-large-text-bold {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+/* GENERAL INPUT STYLING */
+.input-width-30 {
+    width: 30%;
+}
+
+.input-width-50 {
+    width: 46.5%;
+}
+
+.input-width-max {
+    width: 100%;
+}
+
+
+/* BUTTON STYLING */
+/* Button Container Default Styling */
+#btnContainer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/* media query for medium screens */
+@media screen and (max-width: 768px){
+    button h3 {
+        font-size: smaller;
+    }
+}
+/* Alternate Button Container Styling */
+#submitButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+#submitButtonsTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+button {
+    border: 2px solid var(--primary-blue);
+    padding: 0.5vw;
+    border-radius: 50px;
+    cursor: pointer;
+}
+button h3 {
+    margin: 3px 25px;
+}
+/* button types */
+.secondary-btn {
+    color: var(--primary-blue);
+}
+.primary-btn {
+    color: white;
+    background: var(--primary-blue);
+}
+.secondary-btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--white) ;
+}
+.primary-btn:hover {
+    background-color: #c2e2f5;
+    color: var(--primary-blue);
+}
+
+/* Inactive Element Styling */
+.inactive {
+    opacity: 40%;
+}

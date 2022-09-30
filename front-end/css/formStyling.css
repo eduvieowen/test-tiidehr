@@ -1,0 +1,58 @@
+/* UTILITY CLASSES */
+.column-span-full {
+    grid-column: 1 / -1;
+}
+
+.role-styling {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px 0px;
+}
+
+.role-styling:hover {
+    background-color: var(--very-light-grey);
+}
+
+/* FORM STYLING */
+fieldset {
+    border: none;
+}
+
+select {
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.popupForm {
+    padding: 14px;
+    /* form layout styling */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 20px;
+    box-shadow: 0 0 15px #c4c4c480;
+    border-radius: 5px;
+}
+
+.popupForm input,
+.popupForm textarea {
+    padding: 14px;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+}
+
+.popupForm input {
+    width: 100%;
+    height: 30px;
+    font-family: inherit;
+    /* cursor: pointer; */
+}
+
+.popupForm textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-family: inherit;
+}

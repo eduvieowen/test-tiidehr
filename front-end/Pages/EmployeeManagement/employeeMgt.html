@@ -1,0 +1,646 @@
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="dashboard.css" />
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <link rel="stylesheet" href="popUpStyling.css">
+        <link rel="stylesheet" href="employer_display.css" />
+
+        <title>New Dashboard</title>
+      </head>
+      <body>
+        <!-- nav bar -->
+        <section id="topBar">
+          <!-- logo -->
+          <img src="./icons/logo.png" alt="" />
+
+          <!-- Search -->
+          <div class="searchbar">
+            <input type="search" name="" id="" class="input-width-max" />
+            <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+            <div class="search-icon-div">
+              <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+            </div>
+              
+          </div>
+
+          <!-- time and date -->
+          <div id="topBar-texts">
+            <div id="topBar-time-and-date">
+
+              <div class="ttTime">
+                <!-- <p>Time</p> -->
+                <p id="topBar-time" class="small-text-bold">
+                  <span class="hour"> 11</span>:
+                  <span class="minutes">27</span>
+                <span class="am-pm">am</span>
+              </p>
+            </div>
+
+            <div class="ttDate">              
+              <!-- <p>Date</p> -->
+              <p id="topBar-date" class="small-text-bold">
+                <span class="Month">Aug </span>
+                <span class="day">06</span>,
+                <span class="year">2022</span>
+              </p>
+            </div>
+
+            </div>
+
+            <!-- topbar profile -->
+
+            <div class="" id="topbar-profile">
+          <i class="fa-solid fa-user userph"></i>
+                <div id="topbar-profile-text">
+                <h4 class="small-text-bold" id="userFullName">
+                  Olaseni Sanyaolu
+                </h4>
+                <h4 class="small-text-italic" id="dept">BackEnd</h4>
+              </div>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-bars" id="fa-bars"></i>
+        </section>
+
+        <!-- main section -->
+        <main id="main">
+          <!-- side bar -->
+          <section id="sidebar" class="sidebar">
+            <!-- top side bar -->
+            <div id="sidebar-nav">
+              <!-- Dashboard with active class -->
+              <div id="arrow-box" onclick="toggleArrow()" > <!-- -->
+                <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+                
+              </div>
+              <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+              <!-- Dashboard -->
+              <label class="page-link" for="Dashboard">
+                <i class="fa-solid icon-14 fa-table-columns"></i>
+                <a href="../employerDashboard/employerDashboard.html" class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+              </label>
+
+              <!-- roles --> 
+              
+              <label class="page-link" for="role-link">
+                <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+                <a href="../Role management/RoleMgtDashboard/RoleMgtDashB.html" class="link"  name="role-link" id="role-link">Role</a>
+              </label>
+              
+              <!-- levels -->
+             
+              <label class="page-link" for="levels-link">
+                <i class="fa-solid icon-14 fa-layer-group"></i>
+                <a href="../Level_Management/level_management.html" class="link"  name="levels-link" id="levels-link">Levels</a>
+              </label>
+
+              <!-- Leaves -->
+              
+              <label class="page-link" for="leave-link">
+                <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+                 <a href="../LeaveManagement/leaveManagement.html" class="link"  name="leave-link" id="leave-link">Leave</a>
+              </label>
+
+
+              <!-- Employee -->
+              
+              <label class="page-link active" for="employee-link">
+                <i class="fa-solid icon-14 fa-people-roof"></i>
+                 <a href="" class="link"  name="employee-link" id="employee-link">Employees</a>
+              </label>
+
+              <!-- notification -->
+              
+              <label class="page-link inactive" for="notification-link"> 
+                <i class="fa-solid icon-14 fa-bell"></i>
+                 <a href="" class="link"  name="notification-link" id="notification-link">Notification</a>
+              </label>
+
+
+              <!-- Business Profile -->
+              
+              <!-- <label class="page-link" for="business-profile-link"> 
+                <i class="fa-solid icon-14 fa-building"></i>
+                 <a href="../businessProfileDash/businessProfileDash.html" class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+              </label> -->
+
+                   <!-- Contact us -->
+        <label class="page-link" for="sign-out">
+          <i class="fa-solid icon-14 fa-address-card" "></i>
+          <a href="../../Pages/homepage/contact.html"class="link"  name="sign-out" id="sign-out">Contact us</a>
+        </label>
+
+              <!-- Sign out -->
+              <label class="page-link" for="sign-out">
+                <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+                <a href="../../../index.html" class="link"  name="sign-out" id="sign-out">Sign Out</a>
+              </label>
+            </div>
+          </section>
+          <!-- content section -->
+          <!-- content section -->
+          <!-- content section -->
+          <!-- content section -->
+          <!-- content section -->
+          <section id="content-area">
+            <!-- write your code here -->
+            <!-- write your code here -->
+            <div class="employee-card-list">
+              
+              <!-- Employee card list top -->
+              <div class="employee-card-list-top">
+                <p>Showing: <span>1</span> - <span>20</span> of <span>56</span> </p>
+                <div class="icons">
+                  <div id="prev">
+                    <i class="fa-solid fa-backward"></i>
+                  </div>
+                  <div id="next">
+                    <i class="fa-solid fa-forward"></i>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- employee card goes here -->
+              <!-- employee card goes here -->
+              <!-- employee card goes here -->
+              <!-- employee card goes here -->
+              <div class="employee-cards" id="employee-cards">
+
+                <!-- <div class="employee-card" >
+                  <img src="./icons/AS.png" alt="">
+                 
+                  <div class="details">
+                    <h4 class="fullName">Abraham Solabi</h4>
+                    <h4 class="role">Team Lead</h4>
+
+                    <div class="sm-details-display">                    
+                      <div class="sm-display-text">
+                        
+                      <div class="sm-detail-group1">
+                        <p class="mr5">Email:</p>
+                        <p> abrahamsolabi@tiidehr.io</p>
+                      </div>
+                      
+                      <div class="sm-detail-group2">
+                        <p class="mr5">Phone:</p>
+                        <p>0801 112 2333</p>
+                      </div>                    
+  
+                      <div class="sm-detail-group3">
+                        <p class="mr5">Start Date:</p>
+                        <p>08/Jun/22</p>
+                      </div>
+                    </div>
+                      <button class="primary-button butn">Action</button>
+                    </div>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> abrahamsolabi@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+           
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/RJ.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Rotimi Jemilat</h4>
+                    <h4 class="role">Ast Team Lead</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> rotimijemilat@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/OG.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Olayiwola Ganiyat</h4>
+                    <h4 class="role">BackEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> Olayiwolaganiyat@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/SM.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Sanusi Moshood</h4>
+                    <h4 class="role">FrontEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> sanusimoshood@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/OE.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Odinaka Emmanuel</h4>
+                    <h4 class="role">BackEnd</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> emmanuelodinaka@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/NC.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Nwigwe Tiana</h4>
+                    <h4 class="role">FrontEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> nwigwetiana@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/IT.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Iyiola Tosin</h4>
+                    <h4 class="role">BackEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> iyiolatosin@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/OW.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Oyem Wilson</h4>
+                    <h4 class="role">FrontEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> oyemwilson@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/ED.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Ederuvie Owen</h4>
+                    <h4 class="role">BackEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p> ederuvieowen@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p>0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p>08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+                <!-- here -->
+                <!-- <div class="employee-card">
+                  <img src="./icons/AD.png" alt="">
+                  
+                  <div class="details">
+                    <h4 class="fullName">Akinbo Daniel</h4>
+                    <h4 class="role">FrontEnd Dev</h4>
+                  </div>
+                  
+                  <div class="details-hover">                    
+
+                    <div class="detail-group1">
+                      <p class="mr5">Email:</p>
+                      <p class="dg-mail"> akinbodaniel@tiidehr.io</p>
+                    </div>
+                    
+                    <div class="detail-group2">
+                      <p class="mr5">Phone:</p>
+                      <p class="dg-phone">0801 112 2333</p>
+                    </div>                    
+
+                    <div class="detail-group3">
+                      <p class="mr5">Start Date:</p>
+                      <p class="dg-date">08/Jun/22</p>
+                    </div>
+                    <button class="primary-button butn">Action</button>
+                  </div>
+                  
+                </div> -->
+
+                <!-- here -->
+                <div class="fab" onclick="openPopup()">
+                  <i class="fa-solid fa-circle-plus"></i>
+                </div>
+                  
+                </div>
+
+                <!-- Bottom employee card -->
+              <!-- Bottom employee card -->
+              <!-- Bottom employee card -->
+              <!-- Bottom employee card -->
+              <div class="employee-card-list-bottom">
+                <!-- <p>Showing: <span>1</span> - <span>20</span> of <span>56</span> </p> -->
+                <div class="icons">
+                  <div class="icon" id="prev">
+                    <h5>Prev Page</h5>
+                    <i class="fa-solid fa-backward"></i>
+                  </div>
+                  <div class="icon" id="next">
+                    <i class="fa-solid fa-forward"></i>
+                    <h5>Next Page</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+
+            
+            
+            <!--  -->
+            <!--  -->
+            
+            <!-- Pop-up Section -->
+            <section id="popupContainer">
+              <div class="popup-content">
+                <div class="flex-content">
+                  <!-- close button -->
+                  <i class="fa-solid fa-xmark" onclick="closePopup()"></i>
+
+                <form id="add-new-form">
+
+
+                  <h4>Personal Info</h4>
+                  <div class="group-flex">
+                    <div class="form-group">
+                      <label for="first-name">First Name</label>
+                      <input type="text" id="first-name">
+                    </div>
+                    <div class="form-group">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" id="last-name">
+                    </div>
+                  </div>
+
+                  <h4>Contact Info</h4>
+                  <div class="group-flex">
+                    <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="phone-num">Phone Number</label>
+                      <input type="tel" id="phone-num">
+                    </div>
+                  </div>
+
+                  <h4>Appointment Details</h4>
+                  <div class="group-flex">
+                    <div class="form-group">
+                      <label for="role">Assign Role</label>
+                      <select name="role" id="role">
+                        <option value="role1">Role 1</option>
+                        <option value="role2">Role 2</option>
+                        <option value="role3">Role 3</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="level">Level</label>
+                      <select name="level" id="level">
+                        <option value="level1">Level 1</option>
+                        <option value="level2">Level 2</option>
+                        <option value="level3">Level 3</option>
+                      </select>
+                    </div>
+
+                      <div class="form-group">
+                        <label for="res-date">Resumption Date</label>
+                        <input type="date" id="res-date">
+                      </div>
+                    
+                    <div class="form-group">
+                      <label for="dp-image" id="upload">Add Image</label>
+                      <input type="file" name="dp-image" id="dp-image" accept="image/*">
+                    </div>
+                  </div>
+                    
+
+                  <button class="primary-button" id="preview-Button">Save</button>
+                </form>
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+                <!-- Display -->
+                <!-- <div class="preview-section">
+                  
+                  
+                  <div class="details-preview">
+
+                    <div class="dp-preview">
+                      
+                      <i class="fa-solid fa-user"></i>
+
+                      <div class="dp-text">
+
+                        <h3 class="full-name" id="full-name"></h3>
+                        
+                        <h4 class="level-role" id="level-role"></h4>
+                        
+                        <div class="info-flex">
+                          <i class="fa-solid fa-envelope"></i>
+                          <p class="email-preview" id="email-preview"></p>
+                        </div>
+                        
+                        
+                        <div class="info-flex">
+                          <i class="fa-solid fa-phone"></i>
+                          <p class="phone-preview" id="phone-preview"></p>                          
+                        </div>
+                        <div class="info-flex">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <p>Resumption Date: <span id="res-date-prev">  </span> 
+                          </p>
+                        </div>
+                  </div>
+                </div>
+
+                <button class="primary-button" id="add-new">Save</button>
+              </div>
+
+
+                </div> -->
+
+              </div>
+              </div>
+
+            </section>
+
+
+            <script src="employeeMgt.js"></script>
+            <script src="dashboard.js"></script>
+            <script src="popup.js"></script>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/3fe543f2b0.js" crossorigin="anonymous"></script>
+  </body>
+</html>

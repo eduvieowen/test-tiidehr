@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,500&display=swap');
+
+/* some default stylings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Poppins, sans-serif;
+    position: relative;
+    background-color: var(--very-light-grey);
+}
+
+
+/* color variable */
+:root {
+    --primary-blue: #000080;
+    --white: #ffffff;
+    --very-light-grey: #e3e3e3;
+    --light-grey: #c4c4c4;
+    --light-blue: #edfaff;
+    --danger: #ff0000;
+    --black: #000000;
+    --green: #2bd71c;
+
+    --borderR: 2px solid red;
+    --borderG: 2px solid green;
+
+    --primary-pink: #fe8fa2;
+    --primary-green: #138808;
+    --primary-red: #d40000;
+    --primary-orange: #f49f0a;
+
+    --secondary-blue: #008df9;
+
+    --light-blue: #c2e2f5;
+}
+
+/* text style classes */
+
+.normal-text,
+p {
+    font-weight: 500;
+    font-size: 14px;
+    transition: 400ms linear all;
+}
+
+.small-text-italic {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.small-text-bold {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.normal-text-bold,
+button {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.large-text-bold {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.large-text {
+    font-size: 18px;
+}
+
+.Xlarge-text-bold {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.XX-large-text-bold {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+
+
+/* buttons */
+.primary-button {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.secondary-button {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    padding: 10px 18px;
+    outline: none;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* general input styling */
+.input-width-30 {
+    width: 30%;
+}
+
+.input-width-50 {
+    width: 46.5%;
+}
+
+.input-width-max {
+    width: 100%;
+}
+
+
+/* topBar styling */
+#topBar {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--white);
+    box-shadow: 0 5px 2px -2px var(--light-grey);
+
+}
+
+/* logo */
+#topBar img {
+    /* width: 100px; */
+    width: 6rem;
+}
+
+#topBar .fa-bars {
+    display: none;
+    font-size: 2rem;
+}
+
+
+
+/* topbar search */
+.searchbar {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin: 0 10%;
+    overflow: hidden;
+}
+
+#topBar .searchbar input {
+    outline: none;
+    border: 1px solid var(--light-grey);
+    border-radius: 15px;
+    height: 30px;
+    padding-left: 45px;
+}
+
+#topBar .searchbar .search-icon-div {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 0 50% 50% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1px; */
+    transform: translateY(-50%);
+    background-color: #c4c4c4;
+}
+
+.fa-magnifying-glass {
+    font-size: 14px;
+    color: #000080;
+}
+
+
+/* top bar text */
+#topBar #topBar-texts {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    text-align: center;
+    color: #000080;
+}
+
+#topBar #topBar-time-and-date {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+#topBar-time-and-date .ttDate,
+#topBar-time-and-date .ttTime {
+    display: flex;
+}
+
+
+#topBar #topBar-time p {
+    width: 100%;
+}
+
+#topBar #topBar-time-and-date #topbar-time {
+    margin-right: 100px;
+}
+
+#topbar-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#topbar-profile .userph {
+    font-size: 20px;
+    text-align: center;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#topbar-profile img {
+    width: 20px;
+    padding: 3px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#topbar-profile-text {
+    text-align: left;
+}
+
+/* main */
+main {
+    display: flex;
+    position: relative;
+}
+
+/* blur */
+.blur {
+    background-color: var(--light-grey);
+    filter: blur(3px);
+    transition: 300ms all;
+}
+
+/*  side bar*/
+.sidebar {
+    height: calc(100vh);
+    /* background-color: var(--primary-blue); */
+    background-color: var(--white);
+    z-index: 5;
+    width: fit-content;
+    transition: 400ms linear all;
+    position: sticky;
+    top: 60px;
+    left: 0;
+    /* padding-left: 10px; */
+    transition: 300ms linear all;
+    /* overflow: hidden; */
+    box-shadow: 1px -1px 15px -1px var(--light-grey);
+}
+
+#sidebar-nav {
+    width: fit-content;
+    margin-left: auto;
+    /* margin-right: auto; */
+    padding-left: 10px;
+    margin-top: 20px;
+    transition: 300ms linear all;
+}
+
+
+#sidebar-nav .fa-xmark {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+
+.sidebar label {
+    width: 100%;
+    transition: 300ms linear all;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.sidebar label i {
+    margin-right: 10px;
+}
+
+
+label a {
+    font-size: 12px;
+    font-weight: 600;
+    transition: 400ms linear all;
+    /* color: var(--white); */
+    color: var(--primary-blue);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+}
+
+label .active {
+    color: white;
+}
+
+
+.showP {
+    display: none;
+    transition: 400ms linear all;
+}
+
+#arrow-box {
+    text-align: end;
+    margin-left: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+#arrow-box:hover {
+    background-color: #000080;
+}
+
+#arrow-box:hover .fa-arrow-left {
+    color: #fff;
+}
+
+#arrow-box .fa-arrow-left {
+    font-size: 16px;
+    cursor: pointer;
+    color: #000080;
+    padding: 10px;
+}
+
+.rotate-arrow {
+    rotate: 180deg;
+}
+
+.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.inactive {
+    opacity: 0.2;
+}
+
+.display-none {
+    display: none !important;
+}
+
+/* content */
+#content-area {
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/* individual icon styling */
+.icon-14 {
+    font-size: 14px;
+    color: var(--primary-blue);
+}
+
+.active a {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.active .icon-14 {
+    color: var(--white);
+}
+
+
+
+
+/* media query for medium screens */
+@media (max-width: 768px) {
+
+    #topBar {
+        justify-content: space-between;
+    }
+
+    .searchbar {
+        margin: 0 2rem;
+        overflow: visible;
+        flex: none;
+        width: 50%;
+    }
+
+    #sidebar-nav .fa-xmark {
+        display: block;
+        /*  */
+        width: fit-content;
+        margin-right: 15px;
+        margin-left: auto;
+    }
+
+
+    #sidebar-nav .fa-xmark,
+    #topBar .fa-bars {
+        display: block;
+        font-size: 14px;
+        color: #000080;
+    }
+
+
+    /* side bar to menu with hamburger toggle */
+    #topBar #topBar-texts {
+        display: none;
+    }
+
+    /*Sidebar  */
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 20%;
+        height: 100vh;
+    }
+
+    .toggle-sideBar {
+        left: 0;
+    }
+
+    #arrow-box .fa-arrow-left {
+        display: none;
+    }
+
+    #sidebar-nav {
+        padding-top: 1rem;
+    }
+}
+
+/* media query for small screen */
+@media (max-width: 640px) {
+
+    /* side bar to menu with hamburger toggle */
+    /*  */
+
+    .sidebar {
+        width: 40%;
+    }
+
+    .searchbar {
+        width: fit-content;
+    }
+
+    .searchbar input {
+        display: none;
+    }
+
+    #topBar .searchbar .search-icon-div {
+        background-color: transparent;
+        font-size: 1.2rem;
+    }
+
+}

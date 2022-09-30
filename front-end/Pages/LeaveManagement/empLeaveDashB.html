@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="../../css/generalTemplate.css"> -->
+  <link rel="stylesheet" href="empLeaveDashB.css">
+
+  <link rel="stylesheet" href="../../css/generalStyling.css">
+  <link rel="stylesheet" href="../../css/dashboard.css">
+  <link rel="stylesheet" href="../../css/tableStyling.css">
+  <link rel="stylesheet" href="../../css/formStyling.css">
+  <link rel="stylesheet" href="../../css/popUpStyling.css">
+
+  <script src="https://kit.fontawesome.com/c371471545.js" crossorigin="anonymous"></script>
+
+  <title>TIIDE-HR | Leave History</title>
+</head>
+
+
+<body>
+  <!-- nav bar -->
+  <section id="topBar">
+    <!-- logo -->
+    <img src="./icons/logo.png" alt="" />
+
+    <!-- Search -->
+    <div class="searchbar">
+      <input type="search" name="" id="" class="input-width-max" />
+      <!-- <img src="./icons/glass-5625.svg" alt="" /> -->
+      <div class="search-icon-div">
+        <i class="fa-solid fa-magnifying-glass search-icon" ></i>
+      </div>
+        
+    </div>
+
+    <!-- time and date -->
+    <div id="topBar-texts">
+      <div id="topBar-time-and-date">
+
+        <div class="ttTime">
+          <!-- <p>Time</p> -->
+          <p id="topBar-time" class="small-text-bold">
+            <span class="hour"> 11</span>:
+            <span class="minutes">27</span>
+          <span class="am-pm">am</span>
+        </p>
+      </div>
+
+      <div class="ttDate">              
+        <!-- <p>Date</p> -->
+        <p id="topBar-date" class="small-text-bold">
+          <span class="Month">Aug </span>
+          <span class="day">06</span>,
+          <span class="year">2022</span>
+        </p>
+      </div>
+
+      </div>
+
+      <!-- topbar profile -->
+
+      <div class="" id="topbar-profile">
+    <i class="fa-solid fa-user userph"></i>
+          <div id="topbar-profile-text">
+          <h4 class="small-text-bold" id="userFullName">
+            Olaseni Sanyaolu
+          </h4>
+          <h4 class="small-text-italic" id="dept">BackEnd</h4>
+        </div>
+      </div>
+    </div>
+
+    <i class="fa-solid fa-bars" id="fa-bars"></i>
+  </section>
+
+
+  <!-- main section -->
+  <main id="main">
+      <!-- side bar -->
+      <section  class="sidebar" id="sidebar">
+        <!-- top side bar -->
+        <div id="sidebar-nav">
+          <!-- Dashboard with active class -->
+          <div id="arrow-box" onclick="toggleArrow()" > <!-- -->
+            <i class="fa-solid fa-arrow-left icon-14" id="arrow"></i>
+          </div>
+          <i class="fa-solid fa-xmark" id="fa-xmark"></i>
+
+          <!-- Dashboard -->
+          <label class="page-link" for="Dashboard">
+            <i class="fa-solid icon-14 fa-table-columns"></i>
+            <a href="../EmployeeManagement/EmployeeDashboard/Dashboard-Tiana/dashboard-tiana.html"class="link"  name="Dashboard" id="Dashboard">Dashboard</a>
+          </label>
+
+          <!-- roles -->
+          
+          <label class="page-link display-none" for="role-link">
+            <i class="fa-sharp fa-solid icon-14 fa-toolbox"></i>
+            <a href="../../../Role management/RoleMgtDashboard/RoleMgtDashB.html" class="link"  name="role-link" id="role-link">Role</a>
+          </label>
+          
+          <!-- levels -->
+         
+          <label class="page-link display-none" for="levels-link">
+            <i class="fa-solid icon-14 fa-layer-group"></i>
+            <a href="../../../Level_Management/level_management.html" class="link"  name="levels-link" id="levels-link">Levels</a>
+          </label>
+
+          <!-- Leaves -->
+          
+          <label class="page-link active" for="leave-link">
+            <i class="fa-solid icon-14 fa-mattress-pillow"></i>
+             <a href="../../../LeaveManagement/empLeaveDashB.html" class="link"  name="leave-link" id="leave-link">Leave</a>
+          </label>
+
+
+          <!-- Employee -->
+          
+          <label class="page-link display-none" for="employee-link">
+            <i class="fa-solid icon-14 fa-people-roof"></i>
+             <a href="../../employeeMgt.html" class="link"  name="employee-link" id="employee-link">Employees</a>
+          </label>
+
+          <!-- notification -->
+          
+          <label class="page-link inactive" for="notification-link"> 
+            <i class="fa-solid icon-14 fa-bell"></i>
+             <a href="" class="link"  name="notification-link" id="notification-link">Notification</a>
+          </label>
+
+
+          <!-- Business Profile -->
+          
+          <label class="page-link display-none" for="business-profile-link"> 
+            <i class="fa-solid icon-14 fa-building"></i>
+             <a href="../../../businessProfileDash/businessProfileDash.html" class="link"  name="business-profile-link" id="business-profile-link">Business Profile</a>
+          </label>
+
+          <!-- Sign out -->
+          <label class="page-link" for="sign-out">
+            <i class="fa-solid icon-14 fa-right-from-bracket"></i>
+            <a href="../../../index.html" class="link"  name="sign-out" id="sign-out">Sign Out</a>
+          </label>
+        </div>
+      </section>
+
+    <!-- CONTENT SECTION -->
+    <section id="content-area">
+
+      <!-- CARD 1 -->
+      <section class="content-boxes">
+
+        <h3>2022-2023</h3>
+        <div id="leaveWrapper">
+
+          <div id="" class="leave-counter sec-blue-bg">
+            <div class="leave-count large-text-bold">14</div>
+            <p class="large-text">Total Leaves</p>
+          </div>
+
+          <div id="" class="leave-counter pink-bg">
+            <div class="leave-count large-text-bold">4</div>
+            <p class="large-text">Leaves Used</p>
+          </div>
+
+          <div id="" class="leave-counter green-bg">
+            <div class="leave-count large-text-bold">10</div>
+            <p class="large-text">Leaves Balance</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- CARD 2 -->
+      <section class="content-boxes">
+        <h3>Upcoming Holidays</h3>
+
+        <div id="sideContainer">
+          <h5 id="side-title">New Year</h5>
+          <div id="sideWrapper">
+            <p id="side-date" class="normal-text">Jan 01 2023</p>
+            <p id="side-day" class="normal-text-bold">Wednesday</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- MAIN CARD -->
+      <article id="mainContentWrapper" class="column-span-full">
+
+        <div class="leave-text">
+          <h4 class="Xlarge-text-bold">Leave History</h4>
+          <i id="altPopup" class="fa-solid fa-circle-plus" onclick="openPopup()"></i>
+        </div>
+
+        <!-- table -->
+        <table>
+          <!-- table headers -->
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th class="centered-td">Date Applied</th>
+              <th class="centered-td">Duration (days)</th>
+              <th class="centered-td">Status</th>
+              <th class="centered-td">Action</th>
+            </tr>
+          </thead>
+
+          <!-- table data -->
+          <tbody id="leaveHistoryTable">
+<!--             
+            <tr>
+              <td>
+                Maternity Leave
+                <p class="leaveDescription">
+                <p class="underlineText">Description:</p> Take care of.</p>
+              </td>
+              <td class="centered-td">
+                28-2-22
+              </td>
+              <td class="centered-td">
+                30
+              </td>
+              <td>
+                <div class="orange-bg">
+                  PENDING
+                </div>
+              </td>
+              <td>
+
+                <div class="actionButtonsWrapper">
+                  <i class="fa-regular fa-xl fa-pen-to-square edit-data"></i>
+
+                  <i class="fa-regular fa-xl fa-trash-can delete-data"></i>
+                </div>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Casual Leave
+                <p class="leaveDescription">
+                  <p class="underlineText">DESCRIPTION:</p>
+                  Sister's wedding 
+                </p>
+              </td>
+              <td class="centered-td">
+                17-12-23
+              </td>
+              <td class="centered-td">
+                14
+              </td>
+              <td>
+                <div class="green-bg">
+                  APPROVED
+                </div>
+              </td>
+              <td>
+
+                <div class="actionButtonsWrapper">
+                  <i class="fa-regular fa-xl fa-pen-to-square edit-data"></i>
+
+                  <i class="fa-regular fa-xl fa-trash-can delete-data"></i>
+                </div>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Sick Leave
+                <p class="leaveDescription">
+                  <p class="underlineText">DESCRIPTION:</p>
+                  Recovering from broken toe
+                </p>
+              </td>
+              <td class="centered-td">
+                1-1-23
+              </td>
+              <td class="centered-td">
+                10
+              </td>
+              <td>
+                <div class="sec-blue-bg">
+                  COMPLETED
+                </div>
+              </td>
+              <td>
+
+                <div class="actionButtonsWrapper">
+                  <i class="fa-regular fa-xl fa-pen-to-square edit-data"></i>
+
+                  <i class="fa-regular fa-xl fa-trash-can delete-data"></i>
+                </div>
+
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Annual Leave
+                <p class="underlineText">
+                  <p class="underlineText">DESCRIPTION:</p>
+                  Travel vacation
+                </p>
+              </td>
+              <td class="centered-td">
+                2-10-22
+              </td>
+              <td class="centered-td">
+                6
+              </td>
+              <td>
+                <div class="red-bg">
+                  DENIED
+                </div>
+              </td>
+              <td>
+
+                <div class="actionButtonsWrapper">
+                  <i class="fa-regular fa-xl fa-pen-to-square edit-data"></i>
+
+                  <i class="fa-regular fa-xl fa-trash-can delete-data"></i>
+                </div>
+
+              </td>
+            </tr>
+             -->
+          </tbody>
+
+        </table>
+
+        <!-- button -->
+        <div id="btnContainer">
+
+          <button class="normal-text-bold primary-btn" onclick="openPopup()">
+            <h3>Apply</h3>
+          </button>
+
+        </div>
+      </article>
+
+    </section>
+
+    <!-- added popup pages -->
+    <aside id="popupContainer">
+
+      <div class="popup-content">
+
+        <h4 id="popupTitle">Leave Application</h4>
+
+        <form id="leaveAppForm" action="">
+          <fieldset>
+
+            <section class="popupForm">
+
+              <div class="column-span-full">
+
+                <label for="typeOfLeave">
+                  <h5>Type</h5>
+                </label>
+
+                <input list="leaves" type="text" name="typeOfLeave" placeholder="Select Leave Type" required>
+
+                <datalist id="leaves">
+                  <option value="Maternity/Paternity Leave"></option>
+                  <option value="Casual Leave"></option>
+                  <option value="Sick Leave"></option>
+                  <option value="Annual Leave"></option>
+                  <option value="Other...">Specify Type in Description</span></option>
+                </datalist>
+
+              </div>
+
+              <div class="">
+                <label for="startLeave">
+                  <h5>To Start</h5>
+                </label>
+
+                <input type="date" name="startLeave" id="startLeave" required>
+              </div>
+
+              <div>
+                <label for="endLeave">
+                  <h5>To End</h5>
+                </label>
+
+                <input type="date" name="endLeave" id="endLeave" placeholder="MM/DD/YYYY" required>
+              </div>
+
+
+              <div class="column-span-full">
+                <label for="leaveText">
+                  <h5>Description</h5>
+                </label>
+
+                <textarea name="leaveText" placeholder="Type Leave Description" required></textarea>
+              </div>
+
+            </section>
+
+            <section id="submitButtons">
+              <!-- removed button links and added onclick functions -->
+              <button class="secondary-btn" type="button" value="Cancel" onclick="closePopup()">
+                <h3>Cancel</h3>
+              </button>
+
+              <button class="primary-btn" type="submit" value="Save">
+                <h3>Submit</h3>
+              </button>
+            </section>
+
+          </fieldset>
+
+
+        </form>
+
+      </div>
+
+    </aside>
+
+    <script src="../../javascript/popup.js"></script>
+    <script src="../../javascript/dashboard.js"></script>
+    <script src="leaveCrud.js"></script>
+    <!-- <script src="testDate.js"></script> -->
+</body>
+
+</html>

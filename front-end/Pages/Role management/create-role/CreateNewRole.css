@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body {
+  line-height: 1.6;
+  padding: 0 20px 0 70px;
+  font-family: "Roboto", sans-serif;
+}
+.role-access{
+  color: blue;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.flex p {
+  margin-right: auto;
+  font-weight: bold;
+}
+#text-area{
+  resize: none;
+}
+
+
+
+.header {
+  text-align: justify;
+  color: blue;
+  padding: 20px;
+
+  font-size: 40px;
+  font-weight: 1000%;
+}
+.prg {
+  font-size: 20px;
+  color: blue;
+  font-weight: bold;
+}
+.paragraph {
+  font-size: 20px;
+  color: blue;
+}
+.box-container {
+  padding: 8px 4rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.75);
+  max-width: 95%;
+
+
+}
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.8rem;
+  border-radius: 40px;
+  background: transparent;
+  border: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.btn-save {
+  background: blue;
+  color: white;
+}
+.btn-save:hover {
+  background: white;
+  color: blue;
+}
+.btn-cancel:hover {
+  background: blue;
+  color: white;
+}
+.btn-container {
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

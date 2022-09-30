@@ -1,0 +1,81 @@
+body{
+    max-width: 100%;
+}
+
+#content{
+    margin-top: 100px;
+    margin-left: 80px;
+    background-color: #ffffff;
+}
+
+#container{
+    box-shadow: 0 0 15px #c4c4c480;
+    border-radius: 20px;
+    padding: 20px 50px;
+    width:50% ;
+}
+
+/* Role access */
+#roleaccess{
+    color: #000080;
+}
+
+#RoleMgt, #LeaveMgt, #EmployeeMgt, #PayrollMgt, #NotificationMgt{
+    width: 30%;
+    padding:8px;
+    border-radius: 7px;
+    background-color: #ffffff;
+}
+
+#RoleMgt{
+    margin-left: 165px;
+}
+
+#LeaveMgt{
+    margin-left: 155px;
+}
+
+#EmployeeMgt{
+    margin-left: 130px;
+}
+
+#PayrollMgt{
+margin-left: 150px;
+}
+
+#NotificationMgt{
+    margin-left: 120px;
+}
+
+/* button */
+#btncontainer{
+    width:50% ;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+    padding: 10px;
+    width: 180%;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0 0 15px #000000;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#back{
+    background-color: #edfaff;
+    color: #000080;
+    border: 2px solid #000080;
+    
+}
+
+#save{
+    background-color: #000080;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
