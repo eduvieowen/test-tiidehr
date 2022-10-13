@@ -65,20 +65,19 @@ form.addEventListener("submit", (event)=> {
     const users = JSON.parse(localStorage.getItem("users")); // Get registered users from local storage
     // let foundUserEmail = users.find(user=>user.email==email);
     // let foundUserPassword = users.find(user=>user.password==password);
-let foundUser = users.filter(user=>{
-  if(user.email === email && user.password === password){
-    return user
-  }
+    let foundUser = users.filter(user=>{
+      if(user.email === email && user.password === password){
+        return user
+      }
+    return false
+    })
+    return foundUser;
+      //   if(foundUserEmail && foundUserPassword){
+      //     return true
+      // }
+      //     return false;
 
-return false
-})
-return foundUser;
-  //   if(foundUserEmail && foundUserPassword){
-  //     return true
-  // }
-  //     return false;
-
-  }
+      }
 
 
 

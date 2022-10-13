@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: solid 1px red; */
 }
 
 /*==================== GOOGLE FONTS ====================*/
@@ -35,7 +36,6 @@
   --form-logo-height: 5rem;
   --footer-logo-width: 4rem;
   --footer-logo-height: 5rem;
-  
 
   /*========== Header Padding ==========*/
   --header-pt: 0.75rem;
@@ -55,7 +55,7 @@
 html {
   scroll-behavior: smooth;
   max-width: 100%;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 body {
@@ -147,7 +147,6 @@ a {
   background-color: #ffffff;
   color: var(--text-color-purple);
   border: 2px solid hsl(var(--primary-hue-color), 100%, 25%);
-
 }
 .navigation-mobile {
   display: none;
@@ -155,13 +154,12 @@ a {
 
 /*==================== HERO SECTION ====================*/
 .hero-wrapper {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
 }
 .hero-section {
   height: 70vh;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   gap: 2%;
 }
 .hero-text-wrapper {
@@ -187,7 +185,6 @@ a {
   width: 90%;
 }
 .slide__image-wrapper {
-  /* width: 40%; */
   z-index: 999;
 }
 .slide__image-wrapper {
@@ -195,22 +192,21 @@ a {
 }
 .slide__image-wrapper-1 img {
   object-fit: cover;
-  /* height: 500px; */
-  /* clip-path: circle(190px at 50% 50%); */
-  /* clip-path: circle(320px at 350px 350px); Make first hero image rounded */
 }
 .slide__image-wrapper img {
   width: 100%;
   object-fit: contain;
   object-position: center;
 }
-
+/* Hide custom swiper navigation arrows on desktop */
+.left-arrow,
+.right-arrow {
+  display: none;
+}
 .swiper {
-  /* width: 600px; */
   width: 42%;
   height: 300px;
 }
-
 
 .call-to-action {
   outline: none;
@@ -227,9 +223,7 @@ a {
   background-color: #fafafa;
   padding: 2rem 0;
 }
-/* .features-section-head {
-  padding: 2rem 0;
-} */
+
 .section__head {
   text-align: center;
   color: #000080;
@@ -287,7 +281,6 @@ a {
 }
 .services-section-heading {
   text-align: center;
-  /* padding: 2rem 0; */
   color: var(--text-color-purple);
   font-size: var(--h1-font-size);
   text-transform: uppercase;
@@ -295,7 +288,6 @@ a {
 .services__wrapper .service {
   display: flex;
   flex-wrap: wrap;
-  /* height: 16.9rem; */
   justify-content: center;
 }
 .top__service .service__image-wrapper,
@@ -382,9 +374,6 @@ a {
   margin-top: 2rem;
 }
 
-/* .footer-logo-image {
-  width: var(--footer-logo-width);
-} */
 .footer-link {
   color: #fff;
 }
@@ -399,8 +388,6 @@ a {
 }
 
 /*==================== MEDIA QUERIES ====================*/
-
-/* For Tablets (min-width: 750px) and  */
 @media (max-width: 1024px) {
   .logo-wrapper .mobile-nav-toggle {
     display: block;
@@ -452,6 +439,9 @@ a {
   }
 
   /* Hero Section  */
+  .hero-section, .hero-wrapper {
+    max-width: 100%;
+  }
   .hero-text-wrapper h2 {
     font-size: 1.8rem;
   }
@@ -522,11 +512,30 @@ a {
   }
   .hero__image-container {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
   .hero-text-wrapper h2 {
     font-size: 1.4rem;
   }
+  /* Display custom swiper navigation arrows on mobile */
+.left-arrow,
+.right-arrow {
+  display: block;
+}
+/* Hide default swiper navigation arrows on mobile */
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "" !important;
+}
+.left-arrow {
+  margin-top: 30vh;
+  margin-left: 120vw ;
+}
+.right-arrow {
+  margin-top: 30vh;
+}
+.slide__image-wrapper img {
+  margin-bottom: 5rem;
+}
   .call-to-action {
     padding: 10px 30px;
   }
@@ -586,7 +595,7 @@ a {
     height: var(--footer-logo-height);
     object-fit: contain;
     object-position: center;
-}
+  }
   .footer-top {
     justify-content: space-between;
   }

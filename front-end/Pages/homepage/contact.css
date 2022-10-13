@@ -162,11 +162,8 @@ a {
 }
 
 
-/* body {
-    position: relative;
-} */
 main {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
 }
 .hero {
     
@@ -177,19 +174,7 @@ main {
     padding: 5rem 0;
     z-index: 999;
 }
-/* body::before {
-    content: "";
-    position: absolute;
-    height: 44%;
-    width: 100%;
-    right: 0;
-    left: 32.3%;
-    top: 0;
-    background-image: url(/front-end/Assets/icons/angle.svg);
-    background-size: 35.8%;
-    background-repeat: no-repeat;
-    background-position: center 100% ;
-  } */
+
 
 .text {
     width: 40%;

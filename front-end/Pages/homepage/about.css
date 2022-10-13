@@ -298,9 +298,14 @@ p .stack {
     border-radius: 10% !important;
 }
 
+/* Hide custom navigation button on large screen */
 .prev-btn, .next-btn {
     display: none;
 }
+.left-arrow, .right-arrow {
+    display: none;
+}
+
 .fix-resolution img {
     object-position: 20% 20%;
 }
@@ -468,25 +473,17 @@ p .stack {
         .swiper-pagination {
             display: none;
         }
+        /* Display swiper custom navigation button on mobile screen */
+        .left-arrow, .right-arrow {
+            display: block;
+        }
         .swiper-button-prev {
             top: 22.9rem !important;
-            /* width: 20px !important; */
-            /* border-radius: 50%; */
-            /* padding: 1.5rem; */
             font-size: 5px !important;
-            margin-left: 65%;
-            /* background: url("/front-end/Assets/icons/arrow-left-circle.svg");
-            background-repeat: no-repeat; */
-            /* width: 0.2rem;
-            aspect-ratio: 4; */
+            margin-left: 65% !important;
         }
         .swiper-button-next {
             top: 23rem !important;
-            /* font-size: 15px !important; */
-            /* background: url("/front-end/Assets/icons/arrow-right-circle.svg");
-            background-repeat: no-repeat; */
-            /* width: 0.2rem;
-            aspect-ratio: 1; */
         }
         .swiper-button-next::after, .swiper-button-prev::after {
             content: "" !important;
